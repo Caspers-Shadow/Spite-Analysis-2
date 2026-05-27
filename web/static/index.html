@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Spite Analysis - Web UI</title>
+  <style>
+    body{font-family:Arial;background:#222;color:#eee;padding:20px}
+    .build,.hand,.discard{margin:10px 0}
+    button.card{width:80px;height:40px;margin:4px}
+  </style>
+</head>
+<body>
+  <h1>Spite Analysis — Web UI</h1>
+  <button id="reset">Reset</button>
+  <h2>Opponent</h2>
+  <div id="opponent"></div>
+  <h2>Builds</h2>
+  <div id="builds"></div>
+  <h2>Your hand</h2>
+  <div id="hand"></div>
+  <h2>Your discards</h2>
+  <div id="discards"></div>
+  <pre id="state"></pre>
+
+<script>
+let selectedHand = null;
+async function fetchState(){
+  const r = await fetch('/state');
+  const s = await r.json();
+  document.getElementById('state').textContent = JSON.stringify(s, null, 2);
+  document.getElementById('opponent').textContent = `Stock top: ${s.stock_tops[1]} Hand size: ${s.hands[1].length}`;
+  const builds = document.getElementById('builds'); builds.innerHTML='';
+  s.builds.forEach((b,i)=>{
+    const btn = document.createElement('button');
+    btn.textContent = `Build ${i}: ${b.map(x=>x[0]).join(',') || '(empty)'} `;
+    btn.onclick = ()=>sendAction({type:'PLAY_STOCK', build_index:i});
+    builds.appendChild(btn);
+  });
+  const hand = document.getElementById('hand'); hand.innerHTML='';
+  s.hands[0].forEach((c,i)=>{
+    const btn = document.createElement('button');
+    btn.className='card'; btn.textContent=c; 
+    btn.onclick = ()=>{ selectedHand=i; alert('Selected hand ' + i + ' ' + c); };
+    hand.appendChild(btn);
+  });
+  const disc = document.getElementById('discards'); disc.innerHTML='';
+  s.discard_tops[0].forEach((d,i)=>{
+    const btn = document.createElement('button'); btn.textContent = `D${i}: ${d||'(empty)'}`;
+    btn.onclick = ()=>{
+      if(selectedHand===null){ alert('Select a hand card first to discard'); return; }
+      sendAction({type:'DISCARD', hand_index:selectedHand, discard_index:i}); selectedHand=null;
+    };
+    disc.appendChild(btn);
+  });
+}
+
+async function sendAction(action){
+  const r = await fetch('/action', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(action)});
+  const j = await r.json();
+  await fetchState();
+}
+
+document.getElementById('reset').onclick = async ()=>{await fetch('/reset',{method:'POST'}); await fetchState();}
+
+fetchState();
+setInterval(fetchState, 2000);
+</script>
+</body>
+</html>

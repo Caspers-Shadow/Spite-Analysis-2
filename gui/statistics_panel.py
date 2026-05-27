@@ -1,4 +1,4 @@
-from .qt_compat import QtWidgets
+from gui.qt_compat import QtWidgets
 
 
 class StatisticsPanel(QtWidgets.QWidget):

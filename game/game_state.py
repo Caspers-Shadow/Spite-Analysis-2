@@ -62,13 +62,14 @@ class GameState:
             for bi in range(4):
                 if card_can_play_on(self.builds[bi], ts):
                     actions.append({"type":"PLAY_STOCK","build_index":bi})
-        # discards
-        for di, pile in enumerate(ps.discards):
-            if pile:
-                top = pile[-1]
-                for bi in range(4):
-                    if card_can_play_on(self.builds[bi], top):
-                        actions.append({"type":"PLAY_DISC","discard_index":di,"build_index":bi})
+        # discards (tops of any player's discard piles are playable)
+        for owner in (0,1):
+            for di, pile in enumerate(self.players[owner].discards):
+                if pile:
+                    top = pile[-1]
+                    for bi in range(4):
+                        if card_can_play_on(self.builds[bi], top):
+                            actions.append({"type":"PLAY_DISC","owner":owner,"discard_index":di,"build_index":bi})
         # discard actions
         for hi, _ in enumerate(ps.hand):
             for di in range(4):
@@ -116,9 +117,10 @@ class GameState:
             return self.get_state(), self.done, {}
 
         if typ == "PLAY_DISC":
+            owner = action.get("owner", player)
             di = action["discard_index"]
             bi = action["build_index"]
-            pile = ps.discards[di]
+            pile = self.players[owner].discards[di]
             if not pile:
                 return self.get_state(), False, {"illegal":True}
             card = pile.pop()
