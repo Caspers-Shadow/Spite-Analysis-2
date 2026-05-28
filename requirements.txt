@@ -1,0 +1,12 @@
+# Spite Analysis – Python dependencies
+# Core (required)
+PyQt6>=6.4.0
+
+# Visualisation (strongly recommended)
+matplotlib>=3.6.0
+
+# RL training (optional – RLAgent degrades gracefully without it)
+torch>=2.0.0
+
+# Utilities (usually already present)
+numpy>=1.23.0

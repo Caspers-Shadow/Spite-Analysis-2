@@ -1,0 +1,6029 @@
+{
+  "summary": {
+    "episodes": 8134,
+    "wins": [
+      7708,
+      0
+    ],
+    "win_pct": [
+      94.8,
+      0.0
+    ],
+    "recent_50_wins": [
+      47,
+      0
+    ],
+    "avg_turns": 56.4,
+    "avg_duration": 0.0109,
+    "agent1_rl_stats": {
+      "epsilon": 1.0,
+      "steps": 0,
+      "avg_loss": 0.0,
+      "avg_reward": 0.0,
+      "replay_size": 0,
+      "torch_available": false
+    }
+  },
+  "results": [
+    {
+      "winner": 0,
+      "turns": 27,
+      "duration_s": 0.0037,
+      "completed_sequences": 2,
+      "total_plays": 40,
+      "total_discards": 26,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0078,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.009,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.009,
+      "completed_sequences": 2,
+      "total_plays": 54,
+      "total_discards": 55,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0079,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0102,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0109,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0125,
+      "completed_sequences": 5,
+      "total_plays": 69,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0073,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.005,
+      "completed_sequences": 2,
+      "total_plays": 36,
+      "total_discards": 28,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0084,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 85,
+      "duration_s": 0.0139,
+      "completed_sequences": 3,
+      "total_plays": 64,
+      "total_discards": 83,
+      "stockpile_remaining": [
+        2,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.011,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 59,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0133,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0099,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 51,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0096,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0101,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0114,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 31,
+      "duration_s": 0.0054,
+      "completed_sequences": 3,
+      "total_plays": 42,
+      "total_discards": 30,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0097,
+      "completed_sequences": 3,
+      "total_plays": 72,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0145,
+      "completed_sequences": 4,
+      "total_plays": 77,
+      "total_discards": 75,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0115,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 55,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 93,
+      "duration_s": 0.0187,
+      "completed_sequences": 7,
+      "total_plays": 101,
+      "total_discards": 91,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 58,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.0081,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0102,
+      "completed_sequences": 4,
+      "total_plays": 74,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0112,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.009,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0138,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 63,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0121,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0151,
+      "completed_sequences": 7,
+      "total_plays": 92,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0161,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 76,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0129,
+      "completed_sequences": 6,
+      "total_plays": 82,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 27,
+      "duration_s": 0.005,
+      "completed_sequences": 3,
+      "total_plays": 44,
+      "total_discards": 26,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 71,
+      "total_discards": 47,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.011,
+      "completed_sequences": 6,
+      "total_plays": 81,
+      "total_discards": 67,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0081,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0077,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 35,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0068,
+      "completed_sequences": 2,
+      "total_plays": 40,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0101,
+      "completed_sequences": 3,
+      "total_plays": 65,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0146,
+      "completed_sequences": 5,
+      "total_plays": 83,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0129,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 59,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0134,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0066,
+      "completed_sequences": 5,
+      "total_plays": 69,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 87,
+      "duration_s": 0.0129,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 86,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.011,
+      "completed_sequences": 5,
+      "total_plays": 68,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0156,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 78,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 53,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0116,
+      "completed_sequences": 4,
+      "total_plays": 71,
+      "total_discards": 53,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0124,
+      "completed_sequences": 8,
+      "total_plays": 103,
+      "total_discards": 71,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0152,
+      "completed_sequences": 4,
+      "total_plays": 71,
+      "total_discards": 78,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0091,
+      "completed_sequences": 5,
+      "total_plays": 69,
+      "total_discards": 43,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.014,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0143,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0159,
+      "completed_sequences": 7,
+      "total_plays": 101,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0114,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0135,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0139,
+      "completed_sequences": 6,
+      "total_plays": 94,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.006,
+      "completed_sequences": 3,
+      "total_plays": 46,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0094,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 61,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0129,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.007,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.01,
+      "completed_sequences": 5,
+      "total_plays": 83,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0095,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.005,
+      "completed_sequences": 3,
+      "total_plays": 48,
+      "total_discards": 28,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0095,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0168,
+      "completed_sequences": 7,
+      "total_plays": 103,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0111,
+      "completed_sequences": 5,
+      "total_plays": 84,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.009,
+      "completed_sequences": 5,
+      "total_plays": 68,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0119,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0089,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0111,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0112,
+      "completed_sequences": 3,
+      "total_plays": 66,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.011,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 41,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 67,
+      "duration_s": 0.0169,
+      "completed_sequences": 2,
+      "total_plays": 54,
+      "total_discards": 65,
+      "stockpile_remaining": [
+        7,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0133,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 31,
+      "duration_s": 0.0083,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 30,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0128,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.011,
+      "completed_sequences": 2,
+      "total_plays": 51,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0109,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0122,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.008,
+      "completed_sequences": 1,
+      "total_plays": 49,
+      "total_discards": 39,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0158,
+      "completed_sequences": 6,
+      "total_plays": 90,
+      "total_discards": 71,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0105,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0131,
+      "completed_sequences": 6,
+      "total_plays": 89,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0134,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 61,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 17,
+      "duration_s": 0.0039,
+      "completed_sequences": 1,
+      "total_plays": 34,
+      "total_discards": 16,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0126,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.013,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 63,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0163,
+      "completed_sequences": 6,
+      "total_plays": 84,
+      "total_discards": 77,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0089,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 85,
+      "duration_s": 0.0229,
+      "completed_sequences": 6,
+      "total_plays": 83,
+      "total_discards": 83,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0091,
+      "completed_sequences": 4,
+      "total_plays": 58,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0125,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 78,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0091,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0106,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0077,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0091,
+      "completed_sequences": 3,
+      "total_plays": 72,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0104,
+      "completed_sequences": 6,
+      "total_plays": 83,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.009,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.013,
+      "completed_sequences": 6,
+      "total_plays": 87,
+      "total_discards": 69,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 31,
+      "duration_s": 0.006,
+      "completed_sequences": 2,
+      "total_plays": 52,
+      "total_discards": 30,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.009,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 70,
+      "duration_s": 0.0111,
+      "completed_sequences": 2,
+      "total_plays": 53,
+      "total_discards": 69,
+      "stockpile_remaining": [
+        5,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 77,
+      "duration_s": 0.0117,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 75,
+      "stockpile_remaining": [
+        5,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 78,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0118,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 47,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0165,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0173,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0141,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0143,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0143,
+      "completed_sequences": 5,
+      "total_plays": 84,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 23,
+      "duration_s": 0.0045,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 21,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0171,
+      "completed_sequences": 7,
+      "total_plays": 90,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.012,
+      "completed_sequences": 5,
+      "total_plays": 64,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 93,
+      "duration_s": 0.0177,
+      "completed_sequences": 6,
+      "total_plays": 86,
+      "total_discards": 91,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0123,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.0056,
+      "completed_sequences": 1,
+      "total_plays": 33,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0116,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0096,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0109,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 53,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0088,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0109,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.007,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0135,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 77,
+      "stockpile_remaining": [
+        0,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0095,
+      "completed_sequences": 3,
+      "total_plays": 47,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.011,
+      "completed_sequences": 6,
+      "total_plays": 83,
+      "total_discards": 65,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0116,
+      "completed_sequences": 4,
+      "total_plays": 79,
+      "total_discards": 61,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0172,
+      "completed_sequences": 5,
+      "total_plays": 87,
+      "total_discards": 78,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0114,
+      "completed_sequences": 4,
+      "total_plays": 56,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0124,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 76,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0123,
+      "completed_sequences": 6,
+      "total_plays": 76,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0084,
+      "completed_sequences": 3,
+      "total_plays": 65,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 89,
+      "duration_s": 0.0172,
+      "completed_sequences": 6,
+      "total_plays": 87,
+      "total_discards": 88,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0092,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 39,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0104,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.007,
+      "completed_sequences": 2,
+      "total_plays": 50,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0126,
+      "completed_sequences": 5,
+      "total_plays": 69,
+      "total_discards": 67,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0103,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0072,
+      "completed_sequences": 5,
+      "total_plays": 68,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 43,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0108,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.0064,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 31,
+      "duration_s": 0.007,
+      "completed_sequences": 2,
+      "total_plays": 37,
+      "total_discards": 30,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0094,
+      "completed_sequences": 5,
+      "total_plays": 69,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0123,
+      "completed_sequences": 4,
+      "total_plays": 71,
+      "total_discards": 51,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0099,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0151,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 67,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0107,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 39,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0081,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 43,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.01,
+      "completed_sequences": 6,
+      "total_plays": 86,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 44,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0069,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 35,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0131,
+      "completed_sequences": 7,
+      "total_plays": 97,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 23,
+      "duration_s": 0.0054,
+      "completed_sequences": 2,
+      "total_plays": 41,
+      "total_discards": 22,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 27,
+      "duration_s": 0.0059,
+      "completed_sequences": 2,
+      "total_plays": 41,
+      "total_discards": 26,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0156,
+      "completed_sequences": 6,
+      "total_plays": 88,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0183,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0108,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0159,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0142,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 83,
+      "duration_s": 0.016,
+      "completed_sequences": 6,
+      "total_plays": 94,
+      "total_discards": 82,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0105,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0089,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.0055,
+      "completed_sequences": 2,
+      "total_plays": 37,
+      "total_discards": 27,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0148,
+      "completed_sequences": 6,
+      "total_plays": 81,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0125,
+      "completed_sequences": 6,
+      "total_plays": 83,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0156,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0143,
+      "completed_sequences": 5,
+      "total_plays": 91,
+      "total_discards": 59,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0149,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0177,
+      "completed_sequences": 4,
+      "total_plays": 78,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 25,
+      "duration_s": 0.006,
+      "completed_sequences": 3,
+      "total_plays": 47,
+      "total_discards": 24,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.0068,
+      "completed_sequences": 1,
+      "total_plays": 37,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0121,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0105,
+      "completed_sequences": 3,
+      "total_plays": 65,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0107,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0096,
+      "completed_sequences": 6,
+      "total_plays": 79,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0117,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 76,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0084,
+      "completed_sequences": 3,
+      "total_plays": 52,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0107,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0095,
+      "completed_sequences": 6,
+      "total_plays": 81,
+      "total_discards": 47,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.0054,
+      "completed_sequences": 3,
+      "total_plays": 52,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0074,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0057,
+      "completed_sequences": 2,
+      "total_plays": 46,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0102,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0066,
+      "completed_sequences": 4,
+      "total_plays": 54,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0097,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 45,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.006,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 28,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0106,
+      "completed_sequences": 5,
+      "total_plays": 81,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 27,
+      "duration_s": 0.0047,
+      "completed_sequences": 1,
+      "total_plays": 30,
+      "total_discards": 25,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0135,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0124,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 93,
+      "duration_s": 0.0185,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 92,
+      "stockpile_remaining": [
+        4,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0115,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0106,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 47,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 75,
+      "duration_s": 0.0127,
+      "completed_sequences": 1,
+      "total_plays": 28,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        7,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0081,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 27,
+      "duration_s": 0.0051,
+      "completed_sequences": 2,
+      "total_plays": 40,
+      "total_discards": 26,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0126,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0124,
+      "completed_sequences": 3,
+      "total_plays": 69,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0115,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0086,
+      "completed_sequences": 2,
+      "total_plays": 57,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0049,
+      "completed_sequences": 3,
+      "total_plays": 43,
+      "total_discards": 33,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.006,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0087,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0124,
+      "completed_sequences": 6,
+      "total_plays": 79,
+      "total_discards": 59,
+      "stockpile_remaining": [
+        0,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0098,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 53,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 89,
+      "duration_s": 0.0178,
+      "completed_sequences": 6,
+      "total_plays": 93,
+      "total_discards": 88,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0085,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 21,
+      "duration_s": 0.005,
+      "completed_sequences": 2,
+      "total_plays": 41,
+      "total_discards": 19,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0106,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 41,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0121,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 61,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.006,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.0068,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0117,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.0075,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0077,
+      "completed_sequences": 5,
+      "total_plays": 67,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0136,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 78,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0087,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 52,
+      "total_discards": 37,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0134,
+      "completed_sequences": 6,
+      "total_plays": 94,
+      "total_discards": 65,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0136,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 67,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0106,
+      "completed_sequences": 5,
+      "total_plays": 81,
+      "total_discards": 59,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0106,
+      "completed_sequences": 6,
+      "total_plays": 94,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0098,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0107,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0129,
+      "completed_sequences": 6,
+      "total_plays": 86,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0129,
+      "completed_sequences": 2,
+      "total_plays": 56,
+      "total_discards": 55,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0153,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.0096,
+      "completed_sequences": 2,
+      "total_plays": 42,
+      "total_discards": 27,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.014,
+      "completed_sequences": 3,
+      "total_plays": 66,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0159,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0174,
+      "completed_sequences": 6,
+      "total_plays": 88,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0117,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0123,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0086,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0149,
+      "completed_sequences": 5,
+      "total_plays": 90,
+      "total_discards": 65,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0064,
+      "completed_sequences": 4,
+      "total_plays": 58,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0089,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0139,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 69,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0117,
+      "completed_sequences": 6,
+      "total_plays": 82,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 27,
+      "duration_s": 0.0055,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 26,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0147,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 78,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0074,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0085,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0155,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0154,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 25,
+      "duration_s": 0.0057,
+      "completed_sequences": 3,
+      "total_plays": 44,
+      "total_discards": 24,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0108,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0142,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.016,
+      "completed_sequences": 6,
+      "total_plays": 80,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0107,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 51,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0107,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 65,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 95,
+      "duration_s": 0.0164,
+      "completed_sequences": 7,
+      "total_plays": 108,
+      "total_discards": 94,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0125,
+      "completed_sequences": 5,
+      "total_plays": 66,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0078,
+      "completed_sequences": 2,
+      "total_plays": 42,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 27,
+      "duration_s": 0.004,
+      "completed_sequences": 3,
+      "total_plays": 46,
+      "total_discards": 26,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0075,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.0054,
+      "completed_sequences": 2,
+      "total_plays": 51,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0081,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 43,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0076,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0109,
+      "completed_sequences": 5,
+      "total_plays": 65,
+      "total_discards": 63,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0061,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0113,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0101,
+      "completed_sequences": 2,
+      "total_plays": 57,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 79,
+      "duration_s": 0.0121,
+      "completed_sequences": 2,
+      "total_plays": 47,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        8,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 83,
+      "duration_s": 0.016,
+      "completed_sequences": 7,
+      "total_plays": 98,
+      "total_discards": 82,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0149,
+      "completed_sequences": 5,
+      "total_plays": 85,
+      "total_discards": 75,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.006,
+      "completed_sequences": 2,
+      "total_plays": 46,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0084,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0105,
+      "completed_sequences": 5,
+      "total_plays": 67,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0105,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0095,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 95,
+      "duration_s": 0.018,
+      "completed_sequences": 6,
+      "total_plays": 82,
+      "total_discards": 93,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 46,
+      "total_discards": 47,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.017,
+      "completed_sequences": 7,
+      "total_plays": 96,
+      "total_discards": 73,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0109,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.014,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0152,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 76,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.006,
+      "completed_sequences": 1,
+      "total_plays": 40,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 58,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0079,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.01,
+      "completed_sequences": 6,
+      "total_plays": 88,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.009,
+      "completed_sequences": 5,
+      "total_plays": 65,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0079,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0091,
+      "completed_sequences": 3,
+      "total_plays": 48,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0131,
+      "completed_sequences": 6,
+      "total_plays": 93,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0132,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0099,
+      "completed_sequences": 3,
+      "total_plays": 52,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0071,
+      "completed_sequences": 2,
+      "total_plays": 38,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0155,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 65,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0124,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0092,
+      "completed_sequences": 2,
+      "total_plays": 53,
+      "total_discards": 41,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 25,
+      "duration_s": 0.0061,
+      "completed_sequences": 1,
+      "total_plays": 31,
+      "total_discards": 24,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0122,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0156,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0101,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 45,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0111,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 85,
+      "duration_s": 0.0168,
+      "completed_sequences": 7,
+      "total_plays": 93,
+      "total_discards": 83,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0115,
+      "completed_sequences": 2,
+      "total_plays": 58,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 60,
+      "duration_s": 0.0101,
+      "completed_sequences": 0,
+      "total_plays": 32,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        10,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.0082,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 71,
+      "duration_s": 0.0121,
+      "completed_sequences": 3,
+      "total_plays": 68,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        6,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0081,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 41,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0098,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 51,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0094,
+      "completed_sequences": 3,
+      "total_plays": 68,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0069,
+      "completed_sequences": 2,
+      "total_plays": 43,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 48,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0112,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0107,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 85,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 77,
+      "stockpile_remaining": [
+        4,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0117,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0126,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0136,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0128,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 71,
+      "duration_s": 0.0133,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 70,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0131,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0061,
+      "completed_sequences": 2,
+      "total_plays": 43,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 87,
+      "duration_s": 0.0154,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 86,
+      "stockpile_remaining": [
+        1,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 31,
+      "duration_s": 0.0051,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 29,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.007,
+      "completed_sequences": 2,
+      "total_plays": 50,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0173,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0079,
+      "completed_sequences": 4,
+      "total_plays": 56,
+      "total_discards": 35,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0106,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0075,
+      "completed_sequences": 2,
+      "total_plays": 51,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.0059,
+      "completed_sequences": 2,
+      "total_plays": 50,
+      "total_discards": 27,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0125,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0124,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0109,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 97,
+      "duration_s": 0.02,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 95,
+      "stockpile_remaining": [
+        2,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.0081,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 79,
+      "duration_s": 0.0189,
+      "completed_sequences": 7,
+      "total_plays": 93,
+      "total_discards": 77,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0128,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.0074,
+      "completed_sequences": 3,
+      "total_plays": 42,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0109,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0089,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0151,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 64,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 38,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.007,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0157,
+      "completed_sequences": 7,
+      "total_plays": 111,
+      "total_discards": 73,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0119,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0141,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 76,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0068,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 39,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0101,
+      "completed_sequences": 3,
+      "total_plays": 68,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 31,
+      "duration_s": 0.006,
+      "completed_sequences": 1,
+      "total_plays": 36,
+      "total_discards": 30,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0161,
+      "completed_sequences": 6,
+      "total_plays": 88,
+      "total_discards": 71,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0105,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0121,
+      "completed_sequences": 2,
+      "total_plays": 50,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0118,
+      "completed_sequences": 3,
+      "total_plays": 69,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0116,
+      "completed_sequences": 6,
+      "total_plays": 90,
+      "total_discards": 63,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.009,
+      "completed_sequences": 2,
+      "total_plays": 46,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0106,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 55,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0096,
+      "completed_sequences": 3,
+      "total_plays": 43,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0115,
+      "completed_sequences": 5,
+      "total_plays": 67,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0089,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0112,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0076,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0118,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 81,
+      "duration_s": 0.0147,
+      "completed_sequences": 6,
+      "total_plays": 90,
+      "total_discards": 79,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0097,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0146,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0089,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0121,
+      "completed_sequences": 5,
+      "total_plays": 67,
+      "total_discards": 71,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.013,
+      "completed_sequences": 6,
+      "total_plays": 90,
+      "total_discards": 76,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0072,
+      "completed_sequences": 2,
+      "total_plays": 51,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0101,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 55,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.005,
+      "completed_sequences": 2,
+      "total_plays": 38,
+      "total_discards": 28,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0166,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 69,
+      "duration_s": 0.0143,
+      "completed_sequences": 1,
+      "total_plays": 30,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        11,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0091,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 75,
+      "duration_s": 0.0151,
+      "completed_sequences": 3,
+      "total_plays": 66,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        3,
+        9
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0079,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.015,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 73,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.009,
+      "completed_sequences": 2,
+      "total_plays": 52,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0119,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0106,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 55,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0085,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.005,
+      "completed_sequences": 1,
+      "total_plays": 29,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 31,
+      "duration_s": 0.0051,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 30,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.0058,
+      "completed_sequences": 1,
+      "total_plays": 31,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0125,
+      "completed_sequences": 5,
+      "total_plays": 87,
+      "total_discards": 71,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.0131,
+      "completed_sequences": 6,
+      "total_plays": 87,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 46,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.01,
+      "completed_sequences": 2,
+      "total_plays": 41,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0134,
+      "completed_sequences": 4,
+      "total_plays": 82,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 77,
+      "duration_s": 0.0157,
+      "completed_sequences": 3,
+      "total_plays": 68,
+      "total_discards": 76,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0144,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 55,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 61,
+      "duration_s": 0.0138,
+      "completed_sequences": 6,
+      "total_plays": 88,
+      "total_discards": 60,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0102,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 65,
+      "duration_s": 0.0101,
+      "completed_sequences": 4,
+      "total_plays": 74,
+      "total_discards": 64,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0118,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 53,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0134,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 51,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 37,
+      "duration_s": 0.0131,
+      "completed_sequences": 2,
+      "total_plays": 34,
+      "total_discards": 36,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 25,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 24,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 59,
+      "duration_s": 0.029,
+      "completed_sequences": 0,
+      "total_plays": 24,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        11,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.022,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 83,
+      "duration_s": 0.0273,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 82,
+      "stockpile_remaining": [
+        6,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 41,
+      "duration_s": 0.0097,
+      "completed_sequences": 3,
+      "total_plays": 48,
+      "total_discards": 40,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0154,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 51,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.013,
+      "completed_sequences": 7,
+      "total_plays": 93,
+      "total_discards": 57,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0095,
+      "completed_sequences": 3,
+      "total_plays": 48,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 21,
+      "duration_s": 0.0045,
+      "completed_sequences": 2,
+      "total_plays": 39,
+      "total_discards": 20,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0111,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 52,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0137,
+      "completed_sequences": 5,
+      "total_plays": 68,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 33,
+      "duration_s": 0.0089,
+      "completed_sequences": 2,
+      "total_plays": 40,
+      "total_discards": 32,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 25,
+      "duration_s": 0.0051,
+      "completed_sequences": 2,
+      "total_plays": 38,
+      "total_discards": 24,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.018,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0114,
+      "completed_sequences": 5,
+      "total_plays": 78,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0094,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0144,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.0047,
+      "completed_sequences": 1,
+      "total_plays": 40,
+      "total_discards": 28,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0097,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0118,
+      "completed_sequences": 4,
+      "total_plays": 71,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 54,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 67,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 66,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 54,
+      "total_discards": 43,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 29,
+      "duration_s": 0.0051,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 28,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0089,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 49,
+      "duration_s": 0.0091,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 48,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 23,
+      "duration_s": 0.0041,
+      "completed_sequences": 2,
+      "total_plays": 37,
+      "total_discards": 22,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 53,
+      "duration_s": 0.0084,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 51,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 39,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 37,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0126,
+      "completed_sequences": 6,
+      "total_plays": 94,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        0,
+        9
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 69,
+      "duration_s": 0.0115,
+      "completed_sequences": 6,
+      "total_plays": 85,
+      "total_discards": 65,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0124,
+      "completed_sequences": 6,
+      "total_plays": 90,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 17,
+      "duration_s": 0.0021,
+      "completed_sequences": 2,
+      "total_plays": 41,
+      "total_discards": 15,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.006,
+      "completed_sequences": 3,
+      "total_plays": 66,
+      "total_discards": 31,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 57,
+      "duration_s": 0.0134,
+      "completed_sequences": 6,
+      "total_plays": 79,
+      "total_discards": 56,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 55,
+      "duration_s": 0.0101,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 54,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0103,
+      "completed_sequences": 5,
+      "total_plays": 66,
+      "total_discards": 49,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 47,
+      "duration_s": 0.0093,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 45,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0097,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 87,
+      "duration_s": 0.0184,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 86,
+      "stockpile_remaining": [
+        4,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0143,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 72,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 81,
+      "duration_s": 0.0171,
+      "completed_sequences": 6,
+      "total_plays": 102,
+      "total_discards": 80,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0081,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0113,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 61,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.006,
+      "completed_sequences": 3,
+      "total_plays": 44,
+      "total_discards": 33,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 69,
+      "duration_s": 0.0124,
+      "completed_sequences": 2,
+      "total_plays": 60,
+      "total_discards": 68,
+      "stockpile_remaining": [
+        6,
+        10
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 47,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0097,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 63,
+      "duration_s": 0.0117,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 45,
+      "duration_s": 0.0078,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 44,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0107,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 89,
+      "duration_s": 0.0153,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 88,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.0094,
+      "completed_sequences": 7,
+      "total_plays": 97,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0059,
+      "completed_sequences": 4,
+      "total_plays": 58,
+      "total_discards": 33,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 59,
+      "duration_s": 0.0092,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 58,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 81,
+      "duration_s": 0.0154,
+      "completed_sequences": 7,
+      "total_plays": 103,
+      "total_discards": 80,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 73,
+      "duration_s": 0.0144,
+      "completed_sequences": 6,
+      "total_plays": 100,
+      "total_discards": 71,
+      "stockpile_remaining": [
+        0,
+        12
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 75,
+      "duration_s": 0.013,
+      "completed_sequences": 6,
+      "total_plays": 83,
+      "total_discards": 74,
+      "stockpile_remaining": [
+        0,
+        11
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 43,
+      "duration_s": 0.0071,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 42,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 35,
+      "duration_s": 0.0065,
+      "completed_sequences": 2,
+      "total_plays": 46,
+      "total_discards": 34,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 51,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 50,
+      "stockpile_remaining": [
+        0,
+        13
+      ]
+    },
+    {
+      "winner": null,
+      "turns": 63,
+      "duration_s": 0.0113,
+      "completed_sequences": 1,
+      "total_plays": 47,
+      "total_discards": 62,
+      "stockpile_remaining": [
+        9,
+        11
+      ]
+    }
+  ]
+}
