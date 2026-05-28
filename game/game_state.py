@@ -3,16 +3,14 @@ Core game state and action logic for Spite Analysis.
 
 Turn flow
 ---------
-1. start of turn  → cards already drawn by _switch_turn from previous turn
-2. play phase     → player calls apply_action() with play_* actions any number of times
-3. end turn       → player calls apply_action() with a 'discard' action → turn switches
-                    OR hand becomes empty → turn auto-switches
+1. Start of turn  → draw cards up to MAX_HAND_SIZE (done by _switch_turn of prev turn)
+2. Play phase     → player calls apply_action() with play_* actions, any number of times
+   ** If the player's hand hits 0 during the play phase, they immediately draw
+      a fresh hand of 5 and their turn CONTINUES. **
+3. End turn       → player calls apply_action() with a 'discard' action → turn switches
 
-Auto-end edge cases
--------------------
-If a player's hand is empty AND there are no play actions available (e.g. all hand
-cards were played and stockpile/discard plays are also exhausted), the turn is
-switched automatically so the game never stalls.
+A turn can ONLY end via a discard action (or, as a last resort, if the deck is
+completely exhausted and there are truly no valid actions left).
 """
 
 import copy
@@ -26,13 +24,12 @@ from game.player import Player
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Action dataclass
+# Action
 # ─────────────────────────────────────────────────────────────────────────────
 
 @dataclass
 class Action:
     """A single discrete game action."""
-
     # 'play_hand'      – play a card from the current player's hand
     # 'play_stockpile' – play the stockpile top
     # 'play_discard'   – play the top of one of the player's discard piles
@@ -62,7 +59,7 @@ class GameState:
     """Complete mutable game state for Spite Analysis (2 players)."""
 
     PHASE_PLAY    = 'play'
-    PHASE_DISCARD = 'discard'
+    PHASE_DISCARD = 'discard'   # kept for compatibility; logic uses PHASE_PLAY throughout
 
     MAX_BUILDING_PILES = 4
     STOCKPILE_DEAL     = 13
@@ -77,7 +74,6 @@ class GameState:
             Player(0, player_names[0]),
             Player(1, player_names[1]),
         ]
-        # Four fixed building pile slots; empty list = needs Ace
         self.building_piles: List[List[Card]] = [[], [], [], []]
 
         self.current_player_idx: int = 0
@@ -86,6 +82,7 @@ class GameState:
         self.game_over: bool = False
         self.winner: Optional[int] = None
         self.completed_sequences: int = 0
+        self.hand_refills: int = 0        # total times a hand was refilled mid-turn
 
         self.action_history: List[Action] = []
         self.stats: Dict[str, Any] = {'total_plays': 0, 'total_discards': 0}
@@ -109,7 +106,7 @@ class GameState:
             player.add_to_hand(card)
 
     def _switch_turn(self):
-        """Advance to next player, draw cards, reset phase."""
+        """Advance to next player, draw their cards, reset phase."""
         self.current_player_idx = 1 - self.current_player_idx
         self.turn_number += 1
         self.phase = self.PHASE_PLAY
@@ -126,12 +123,10 @@ class GameState:
 
     # ── Building pile helpers ──────────────────────────────────────────────────
     def pile_top_value(self, pile_idx: int) -> int:
-        """Effective top value (0 = empty pile, i.e. needs Ace)."""
         pile = self.building_piles[pile_idx]
         return pile[-1].effective_value() if pile else 0
 
     def pile_needed_value(self, pile_idx: int) -> int:
-        """Next required value for building pile (1 = Ace for empty pile)."""
         return self.pile_top_value(pile_idx) + 1
 
     def can_play_card_to_pile(self, card: Card, pile_idx: int,
@@ -148,7 +143,6 @@ class GameState:
 
     def _resolve_wild_value(self, card: Card, pile_idx: int,
                              hint: Optional[int] = None) -> Optional[int]:
-        """Return the wild value for card on pile_idx, or None if impossible."""
         if not card.is_wild:
             return None
         needed = self.pile_needed_value(pile_idx)
@@ -159,7 +153,6 @@ class GameState:
 
     def _apply_card_to_pile(self, card: Card, pile_idx: int,
                              wild_value: Optional[int] = None) -> bool:
-        """Place card on building pile. Returns True on success."""
         needed = self.pile_needed_value(pile_idx)
         if needed > 12:
             return False
@@ -177,7 +170,6 @@ class GameState:
         self.building_piles[pile_idx].append(card)
         self.stats['total_plays'] += 1
 
-        # Complete at Queen (12)
         if card.effective_value() == 12:
             self.deck.return_completed_pile(self.building_piles[pile_idx])
             self.building_piles[pile_idx] = []
@@ -187,10 +179,8 @@ class GameState:
 
     # ── Action generation ──────────────────────────────────────────────────────
     def get_play_actions(self) -> List[Action]:
-        """All valid PLAY actions for the current player."""
         if self.game_over:
             return []
-
         actions: List[Action] = []
         player = self.current_player
 
@@ -206,10 +196,8 @@ class GameState:
 
         for card in player.hand:
             _add(card, 'play_hand')
-
         if player.stockpile_top:
             _add(player.stockpile_top, 'play_stockpile')
-
         for pi, top in enumerate(player.discard_tops()):
             if top is not None:
                 _add(top, 'play_discard', pi)
@@ -217,7 +205,6 @@ class GameState:
         return actions
 
     def get_discard_actions(self) -> List[Action]:
-        """All valid DISCARD actions (hand card → personal discard pile)."""
         if self.game_over:
             return []
         player = self.current_player
@@ -228,21 +215,15 @@ class GameState:
         ]
 
     def get_valid_actions(self) -> List[Action]:
-        """All valid actions for the current player."""
         return self.get_play_actions() + self.get_discard_actions()
 
     # ── Action application ─────────────────────────────────────────────────────
     def apply_action(self, action: Action) -> Tuple[bool, Optional[int]]:
-        """
-        Apply action to game state.
-        Returns (success, winner_id).
-        """
         if self.game_over:
             return False, self.winner
 
         player = self.current_player
 
-        # ── Play from hand ─────────────────────────────────────────────────────
         if action.action_type == 'play_hand':
             if action.card not in player.hand:
                 return False, None
@@ -253,10 +234,9 @@ class GameState:
             self.action_history.append(action)
             self._check_win()
             if not self.game_over:
-                self._auto_end_if_stuck(player)
+                self._handle_empty_hand(player)   # ← refill or fallback
             return True, self.winner
 
-        # ── Play from stockpile ────────────────────────────────────────────────
         elif action.action_type == 'play_stockpile':
             if not player.stockpile_top:
                 return False, None
@@ -267,10 +247,9 @@ class GameState:
             self.action_history.append(action)
             self._check_win()
             if not self.game_over:
-                self._auto_end_if_stuck(player)
+                self._handle_empty_hand(player)
             return True, self.winner
 
-        # ── Play from discard pile ─────────────────────────────────────────────
         elif action.action_type == 'play_discard':
             if action.source_pile is None:
                 return False, None
@@ -283,10 +262,9 @@ class GameState:
             self.action_history.append(action)
             self._check_win()
             if not self.game_over:
-                self._auto_end_if_stuck(player)
+                self._handle_empty_hand(player)
             return True, self.winner
 
-        # ── Discard → ends turn ────────────────────────────────────────────────
         elif action.action_type == 'discard':
             if action.card not in player.hand:
                 return False, None
@@ -299,19 +277,33 @@ class GameState:
 
         return False, None
 
-    # ── Win / auto-end helpers ─────────────────────────────────────────────────
+    # ── Win / hand-refill helpers ──────────────────────────────────────────────
     def _check_win(self):
         if self.current_player.has_won:
             self.game_over = True
             self.winner = self.current_player_idx
 
-    def _auto_end_if_stuck(self, player: Player):
+    def _handle_empty_hand(self, player: Player):
         """
-        If the player has no hand cards AND no play actions available,
-        switch the turn automatically so the game never stalls.
-        This is an edge case (played all 5 hand cards and stockpile/discard
-        have nothing playable), but it must be handled gracefully.
+        Called after every play action.
+
+        Rule: if the player's hand is now empty, they immediately draw a fresh
+        hand of 5 cards and their turn CONTINUES — they do not discard yet.
+
+        Fallback: if the deck is truly exhausted (hand stays empty) AND there
+        are also no plays available from stockpile / discard tops, end the turn
+        automatically to prevent the game from freezing.
         """
+        if player.hand:
+            return   # still has cards, nothing to do
+
+        # Draw a fresh hand (Skip-Bo / Spite Analysis rule)
+        new_cards = self.deck.draw_many(Player.MAX_HAND_SIZE)
+        for card in new_cards:
+            player.add_to_hand(card)
+        self.hand_refills += 1
+
+        # Only force-end if we genuinely have nothing left to do
         if not player.hand and not self.get_play_actions():
             self._switch_turn()
 
@@ -328,21 +320,21 @@ class GameState:
         player = self.current_player
         opp    = self.opponent
         return {
-            'hand':              [c.base_value for c in player.hand],
-            'hand_wild':         [1 if c.is_wild else 0 for c in player.hand],
-            'stockpile_top':     player.stockpile_top.base_value if player.stockpile_top else 0,
+            'hand':               [c.base_value for c in player.hand],
+            'hand_wild':          [1 if c.is_wild else 0 for c in player.hand],
+            'stockpile_top':      player.stockpile_top.base_value if player.stockpile_top else 0,
             'stockpile_top_wild': 1 if (player.stockpile_top and player.stockpile_top.is_wild) else 0,
-            'stockpile_size':    player.stockpile_size,
-            'discard_tops':      [(c.base_value if c else 0) for c in player.discard_tops()],
-            'build_tops':        [self.pile_top_value(i) for i in range(self.MAX_BUILDING_PILES)],
-            'opp_stockpile_top': opp.stockpile_top.base_value if opp.stockpile_top else 0,
+            'stockpile_size':     player.stockpile_size,
+            'discard_tops':       [(c.base_value if c else 0) for c in player.discard_tops()],
+            'build_tops':         [self.pile_top_value(i) for i in range(self.MAX_BUILDING_PILES)],
+            'opp_stockpile_top':  opp.stockpile_top.base_value if opp.stockpile_top else 0,
             'opp_stockpile_size': opp.stockpile_size,
-            'opp_discard_tops':  [(c.base_value if c else 0) for c in opp.discard_tops()],
-            'opp_hand_size':     opp.hand_size,
-            'deck_remaining':    self.deck.remaining,
-            'turn_number':       self.turn_number,
-            'current_player':    self.current_player_idx,
-            'phase':             0 if self.phase == self.PHASE_PLAY else 1,
+            'opp_discard_tops':   [(c.base_value if c else 0) for c in opp.discard_tops()],
+            'opp_hand_size':      opp.hand_size,
+            'deck_remaining':     self.deck.remaining,
+            'turn_number':        self.turn_number,
+            'current_player':     self.current_player_idx,
+            'phase':              0 if self.phase == self.PHASE_PLAY else 1,
         }
 
     def get_reward(self, player_id: int) -> float:
@@ -357,22 +349,21 @@ class GameState:
             'turn':     self.turn_number,
             'current_player': self.current_player_idx,
             'phase':    self.phase,
-            'build_piles': [[c.display() for c in pile] for pile in self.building_piles],
-            'build_tops':  [self.pile_top_value(i) for i in range(self.MAX_BUILDING_PILES)],
+            'build_tops': [self.pile_top_value(i) for i in range(self.MAX_BUILDING_PILES)],
             'player': {
-                'hand':          [c.display() for c in player.hand],
-                'stockpile_top': player.stockpile_top.display() if player.stockpile_top else None,
+                'hand':           [c.display() for c in player.hand],
+                'stockpile_top':  player.stockpile_top.display() if player.stockpile_top else None,
                 'stockpile_size': player.stockpile_size,
-                'discard_tops':  [c.display() if c else None for c in player.discard_tops()],
+                'discard_tops':   [c.display() if c else None for c in player.discard_tops()],
             },
             'opponent': {
-                'hand_size':     opp.hand_size,
-                'stockpile_top': opp.stockpile_top.display() if opp.stockpile_top else None,
+                'hand_size':      opp.hand_size,
+                'stockpile_top':  opp.stockpile_top.display() if opp.stockpile_top else None,
                 'stockpile_size': opp.stockpile_size,
-                'discard_tops':  [c.display() if c else None for c in opp.discard_tops()],
             },
             'deck_remaining':      self.deck.remaining,
             'completed_sequences': self.completed_sequences,
+            'hand_refills':        self.hand_refills,
             'game_over': self.game_over,
             'winner':    self.winner,
         }
