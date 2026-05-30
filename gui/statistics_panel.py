@@ -110,7 +110,7 @@ class StatisticsPanel(QWidget):
         gl = QVBoxLayout(g)
         gl.setSpacing(2)
         for k in ["Your Stockpile", "AI Stockpile", "Deck Remaining",
-                  "Completed Seqs", "Hand Refills"]:
+                  "Completed Seqs", "Hand Refills", "Unlock Status"]:
             r = StatRow(k)
             gl.addWidget(r)
             self._rows[k] = r
@@ -165,6 +165,9 @@ class StatisticsPanel(QWidget):
         self._rows["Deck Remaining"].set(str(state.deck.remaining))
         self._rows["Completed Seqs"].set(str(state.completed_sequences))
         self._rows["Hand Refills"].set(str(state.hand_refills))
+        # Unlock status
+        hu = "✓ Unlocked" if state.player_unlocked[human_idx] else f"✗ Need Ace ({state.pile_starts_by[1-human_idx]}/4 opp)"
+        self._rows["Unlock Status"].set(hu)
 
     def update_session(self, games: int, wins: List[int],
                        avg_turns: float, human_idx: int = 0):

@@ -1,4 +1,4 @@
-"""Random agent – selects uniformly at random from all legal actions."""
+"""Random agent – uniform random from all valid actions. Never returns None."""
 
 import random
 from typing import Optional
@@ -8,38 +8,26 @@ from ai.agent import Agent
 
 
 class RandomAgent(Agent):
-    """
-    Baseline agent that plays a uniformly random legal action each step.
-    Always returns a valid Action (never None) by falling back to a forced
-    discard if no other options exist.
-    """
-
     def __init__(self, player_id: int, seed: Optional[int] = None):
         super().__init__(player_id, name="Random")
         self._rng = random.Random(seed)
 
     def choose_action(self, state: GameState) -> Optional[Action]:
-        play_actions = state.get_play_actions()
+        plays    = state.get_play_actions()
+        discards = state.get_discard_actions()
 
-        if play_actions:
-            # 40 % of the time stop playing early and discard instead
-            if self._rng.random() < 0.40:
-                discard_actions = state.get_discard_actions()
-                if discard_actions:
-                    return self._rng.choice(discard_actions)
-            return self._rng.choice(play_actions)
+        if plays:
+            # 40 % chance to stop early and discard instead
+            if self._rng.random() < 0.40 and discards:
+                return self._rng.choice(discards)
+            return self._rng.choice(plays)
 
-        # No plays available → try to discard
-        discard_actions = state.get_discard_actions()
-        if discard_actions:
-            return self._rng.choice(discard_actions)
+        if discards:
+            return self._rng.choice(discards)
 
-        # Last resort: if somehow we have no actions (very rare edge case where
-        # all hand cards were auto-played and the turn didn't switch), return
-        # a forced discard of the first hand card to any discard pile.
+        # Absolute fallback: force discard first hand card to pile 0
         player = state.current_player
         if player.hand:
             return Action('discard', player.hand[0], None, 0)
 
-        # Truly nothing to do – game state will handle the stall
-        return None
+        return None  # Truly stuck – game state will auto-resolve via stall detection
