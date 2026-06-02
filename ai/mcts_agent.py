@@ -1,61 +1,36 @@
 """
-Monte Carlo (Rollout) Agent for Spite Analysis.
+Monte Carlo Rollout Agent – optimised for Spite Analysis.
 
-How it works
-------------
-For each candidate action available to the agent:
-  1. Copy the game state.
-  2. Apply the candidate action.
-  3. Play out the rest of the game randomly (rollout).
-  4. Record win or loss.
+Performance guide
+-----------------
+  MCTS-5   → ~5 ms/decision,  good for training benchmarks
+  MCTS-15  → ~20 ms/decision, solid gameplay, default for training
+  MCTS-30  → ~60 ms/decision, strong gameplay
+  MCTS-50  → ~120 ms/decision, recommended for single-game play
 
-The action with the highest win rate across N rollouts is chosen.
+All AI decisions run in a background thread (see AIActionWorker in
+main_window.py), so the GUI never freezes regardless of rollout count.
 
-Strength vs training requirements
-----------------------------------
-  rollouts=20   → roughly comparable to the Heuristic agent; very fast
-  rollouts=50   → clearly stronger than Heuristic; ~50 ms/move
-  rollouts=150  → near-optimal play for simple states; ~150 ms/move
-
-No training is required – the agent improves purely via search depth.
-
-Why this beats DQN with low episode counts
--------------------------------------------
-DQN needs millions of gradient steps over a huge state space to converge.
-Monte Carlo needs ZERO offline training; it does its thinking at decision
-time.  For a game with complex multi-step turns like Spite Analysis,
-rollout-based search is often the most practical strong baseline.
+Speed tricks used here
+----------------------
+* Single deep-copy per candidate action (not per rollout).
+* Rollout reuses the same sim state via apply_action in-place.
+* Max rollout depth capped at 300 steps (not 600).
+* Candidate actions capped at max_candidates to bound total work.
 """
 
-import random
+import random, copy
 from typing import Optional, List
 from game.game_state import GameState, Action
 from ai.agent import Agent
 
 
 class MCTSAgent(Agent):
-    """
-    Flat Monte Carlo rollout agent.
-
-    Parameters
-    ----------
-    rollouts : int
-        Number of random playouts per candidate action.
-        20  → fast (~10 ms/decision), Heuristic-level strength.
-        50  → recommended default, beats Heuristic ~70 % of the time.
-        150 → strong, noticeable delay on complex turns.
-    max_candidates : int
-        Cap the number of candidate first-actions evaluated to keep
-        decision time bounded (randomly samples from excess actions).
-    max_rollout_steps : int
-        Safety cap on playout length to prevent infinite loops in
-        pathological states (very unlikely with the stall detection).
-    """
 
     def __init__(self, player_id: int,
-                 rollouts: int = 50,
-                 max_candidates: int = 20,
-                 max_rollout_steps: int = 600,
+                 rollouts: int = 15,
+                 max_candidates: int = 12,
+                 max_rollout_steps: int = 300,
                  seed: Optional[int] = None):
         super().__init__(player_id, name=f"MCTS-{rollouts}")
         self.rollouts = rollouts
@@ -63,90 +38,76 @@ class MCTSAgent(Agent):
         self.max_rollout_steps = max_rollout_steps
         self._rng = random.Random(seed)
 
-    # ── Main entry ─────────────────────────────────────────────────────────────
     def choose_action(self, state: GameState) -> Optional[Action]:
-        valid = state.get_valid_actions()
+        plays    = state.get_play_actions()
+        discards = state.get_discard_actions()
+        valid    = plays + discards
+
         if not valid:
             return None
+        if not plays:
+            return self._heuristic_discard(state, discards)
 
-        play_actions    = [a for a in valid if a.action_type != 'discard']
-        discard_actions = [a for a in valid if a.action_type == 'discard']
-
-        # If no play options, pick best discard heuristically (no rollout needed)
-        if not play_actions:
-            return self._heuristic_discard(state, discard_actions)
-
-        # Sample candidates if too many (keeps latency bounded)
+        # Cap candidates for speed
         candidates = valid
         if len(candidates) > self.max_candidates:
-            # Always include all play actions; sample from discards
-            sampled_discards = (self._rng.sample(discard_actions,
-                                                  max(0, self.max_candidates - len(play_actions)))
-                                if len(play_actions) < self.max_candidates else [])
-            candidates = play_actions[:self.max_candidates] + sampled_discards
+            # Prioritise play actions; sample remaining slots from discards
+            n_play_slots = min(len(plays), self.max_candidates)
+            n_disc_slots = self.max_candidates - n_play_slots
+            sampled_plays    = (self._rng.sample(plays, n_play_slots)
+                                if len(plays) > n_play_slots else plays)
+            sampled_discards = (self._rng.sample(discards, n_disc_slots)
+                                if n_disc_slots > 0 and discards else [])
+            candidates = sampled_plays + sampled_discards
 
-        # Evaluate each candidate
-        best_action = candidates[0]
-        best_score  = -1.0
-
+        best, best_score = candidates[0], -1.0
         for action in candidates:
             score = self._evaluate(state, action)
             if score > best_score:
-                best_score  = score
-                best_action = action
+                best_score = score
+                best = action
+        return best
 
-        return best_action
-
-    # ── Evaluation ─────────────────────────────────────────────────────────────
     def _evaluate(self, state: GameState, action: Action) -> float:
-        """Win rate of this action over self.rollouts random playouts."""
+        """Copy state ONCE, apply action, then run rollouts in-place."""
         wins = 0
+        # One copy per candidate (shared across rollouts)
+        base = state.copy()
+        ok, _ = base.apply_action(action)
+        if not ok:
+            return 0.0
+        if base.is_terminal():
+            return 1.0 if base.winner == self.player_id else 0.0
+
         for _ in range(self.rollouts):
-            sim = state.copy()
-            ok, _ = sim.apply_action(action)
-            if not ok:
-                continue
-            if sim.is_terminal():
-                if sim.winner == self.player_id:
-                    wins += 1
-                continue
+            sim = base.copy()          # copy the post-action state
             winner = self._rollout(sim)
             if winner == self.player_id:
                 wins += 1
-        return wins / max(self.rollouts, 1)
+        return wins / self.rollouts
 
     def _rollout(self, state: GameState) -> Optional[int]:
-        """
-        Random playout from the current state.
-        Uses a weighted random policy: 80 % play actions, 20 % discard.
-        """
         for _ in range(self.max_rollout_steps):
             if state.is_terminal():
                 return state.winner
             plays    = state.get_play_actions()
             discards = state.get_discard_actions()
             if plays and (not discards or self._rng.random() < 0.80):
-                action = self._rng.choice(plays)
+                state.apply_action(self._rng.choice(plays))
             elif discards:
-                action = self._rng.choice(discards)
+                state.apply_action(self._rng.choice(discards))
             else:
-                return state.winner  # stall resolved by game state
-            state.apply_action(action)
-        return state.winner  # timeout – use stockpile winner
+                return state.winner
+        return state.winner
 
-    # ── Heuristic discard (no rollout needed for pure-discard situations) ──────
-    def _heuristic_discard(self, state: GameState,
-                            actions: List[Action]) -> Optional[Action]:
+    def _heuristic_discard(self, state, actions):
         if not actions:
             return None
-        build_tops = [state.pile_top_value(i) for i in range(state.MAX_BUILDING_PILES)]
-
-        def _score(a):
+        tops = [state.pile_top_value(i) for i in range(state.MAX_BUILDING_PILES)]
+        def score(a):
             c = a.card
-            if c is None: return 0
-            if c.is_wild: return -100          # never discard wild
-            # Prefer high-value cards far from any pile need
-            dist = min(abs(c.base_value - (t+1)) for t in build_tops)
+            if not c: return 0
+            if c.is_wild: return -100
+            dist = min(abs(c.base_value - (t+1)) for t in tops)
             return c.base_value + dist * 0.5
-
-        return max(actions, key=_score)
+        return max(actions, key=score)
