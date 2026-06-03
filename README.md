@@ -1,6 +1,6 @@
 # Spite Analysis – Card Game & RL Platform
 
-A fully playable implementation of **Spite Analysis** (Skip-Bo variant) with:
+A fully playable implementation of **Spite Analysis** with:
 - Human vs AI gameplay (PyQt6 GUI)
 - AI vs AI self-play
 - Reinforcement learning training infrastructure (DQN)
