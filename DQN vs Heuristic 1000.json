@@ -1,0 +1,6521 @@
+{
+  "summary": {
+    "episodes": 1000,
+    "wins": [
+      11,
+      989
+    ],
+    "win_pct": [
+      1.1,
+      98.9
+    ],
+    "recent_50_wins": [
+      1,
+      49
+    ],
+    "avg_turns": 57.8,
+    "avg_duration": 0.0135
+  },
+  "results": [
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.01,
+      "completed_sequences": 6,
+      "total_plays": 83,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.0163,
+      "completed_sequences": 6,
+      "total_plays": 84,
+      "total_discards": 71,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 74,
+      "duration_s": 0.0127,
+      "completed_sequences": 0,
+      "total_plays": 10,
+      "total_discards": 73,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        13
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.017,
+      "completed_sequences": 7,
+      "total_plays": 100,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0079,
+      "completed_sequences": 2,
+      "total_plays": 39,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0091,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0139,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0111,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 51,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.012,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 34,
+      "duration_s": 0.0061,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 33,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0113,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 47,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0081,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 37,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0079,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0067,
+      "completed_sequences": 3,
+      "total_plays": 47,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0116,
+      "completed_sequences": 6,
+      "total_plays": 84,
+      "total_discards": 65,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0087,
+      "completed_sequences": 2,
+      "total_plays": 55,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0149,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0091,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0147,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 67,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0151,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 75,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.0143,
+      "completed_sequences": 5,
+      "total_plays": 83,
+      "total_discards": 73,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0136,
+      "completed_sequences": 5,
+      "total_plays": 78,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.007,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 31,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.005,
+      "completed_sequences": 1,
+      "total_plays": 42,
+      "total_discards": 31,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0177,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 14,
+      "duration_s": 0.0029,
+      "completed_sequences": 1,
+      "total_plays": 28,
+      "total_discards": 13,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0185,
+      "completed_sequences": 7,
+      "total_plays": 102,
+      "total_discards": 77,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0153,
+      "completed_sequences": 5,
+      "total_plays": 68,
+      "total_discards": 57,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0163,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 34,
+      "duration_s": 0.0075,
+      "completed_sequences": 3,
+      "total_plays": 47,
+      "total_discards": 33,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.0065,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 35,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.02,
+      "completed_sequences": 7,
+      "total_plays": 102,
+      "total_discards": 69,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.019,
+      "completed_sequences": 3,
+      "total_plays": 65,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0172,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.013,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0199,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0178,
+      "completed_sequences": 6,
+      "total_plays": 97,
+      "total_discards": 75,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0141,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.016,
+      "completed_sequences": 6,
+      "total_plays": 92,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0124,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0148,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0098,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0117,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0092,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0105,
+      "completed_sequences": 3,
+      "total_plays": 45,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 88,
+      "duration_s": 0.0195,
+      "completed_sequences": 7,
+      "total_plays": 102,
+      "total_discards": 87,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0155,
+      "completed_sequences": 1,
+      "total_plays": 40,
+      "total_discards": 70,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        11
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.0159,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 73,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0121,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0175,
+      "completed_sequences": 5,
+      "total_plays": 84,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0132,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0136,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0119,
+      "completed_sequences": 3,
+      "total_plays": 66,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0111,
+      "completed_sequences": 3,
+      "total_plays": 45,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0128,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0148,
+      "completed_sequences": 7,
+      "total_plays": 99,
+      "total_discards": 75,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.0177,
+      "completed_sequences": 6,
+      "total_plays": 93,
+      "total_discards": 81,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.01,
+      "completed_sequences": 0,
+      "total_plays": 22,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        12
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.016,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.0071,
+      "completed_sequences": 3,
+      "total_plays": 48,
+      "total_discards": 31,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 24,
+      "duration_s": 0.0058,
+      "completed_sequences": 3,
+      "total_plays": 41,
+      "total_discards": 23,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 28,
+      "duration_s": 0.0055,
+      "completed_sequences": 2,
+      "total_plays": 43,
+      "total_discards": 27,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 57,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.014,
+      "completed_sequences": 2,
+      "total_plays": 56,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0195,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.0187,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 71,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 31,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0188,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 30,
+      "duration_s": 0.007,
+      "completed_sequences": 2,
+      "total_plays": 39,
+      "total_discards": 29,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 55,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.015,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 57,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.0181,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 73,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.021,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.011,
+      "completed_sequences": 4,
+      "total_plays": 54,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0167,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 77,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0164,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 75,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0102,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.0165,
+      "completed_sequences": 5,
+      "total_plays": 94,
+      "total_discards": 71,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0121,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0146,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0133,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 57,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0153,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0112,
+      "completed_sequences": 2,
+      "total_plays": 54,
+      "total_discards": 53,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.0205,
+      "completed_sequences": 6,
+      "total_plays": 89,
+      "total_discards": 81,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0131,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 45,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 86,
+      "duration_s": 0.0175,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 85,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        3
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.015,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0116,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.014,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 71,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.0075,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 35,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0133,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 77,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        7
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0106,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0087,
+      "completed_sequences": 2,
+      "total_plays": 41,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.015,
+      "completed_sequences": 5,
+      "total_plays": 78,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0086,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0131,
+      "completed_sequences": 5,
+      "total_plays": 91,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0156,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0189,
+      "completed_sequences": 3,
+      "total_plays": 65,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0151,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0106,
+      "completed_sequences": 2,
+      "total_plays": 50,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0086,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 45,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 92,
+      "duration_s": 0.018,
+      "completed_sequences": 5,
+      "total_plays": 83,
+      "total_discards": 91,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        1
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0115,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 47,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 80,
+      "duration_s": 0.014,
+      "completed_sequences": 6,
+      "total_plays": 99,
+      "total_discards": 79,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0151,
+      "completed_sequences": 6,
+      "total_plays": 87,
+      "total_discards": 77,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.007,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 31,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.01,
+      "completed_sequences": 2,
+      "total_plays": 55,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 90,
+      "duration_s": 0.0181,
+      "completed_sequences": 5,
+      "total_plays": 90,
+      "total_discards": 89,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        10,
+        2
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.0061,
+      "completed_sequences": 1,
+      "total_plays": 34,
+      "total_discards": 31,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 65,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0146,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 88,
+      "duration_s": 0.0174,
+      "completed_sequences": 6,
+      "total_plays": 92,
+      "total_discards": 87,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        10,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 28,
+      "duration_s": 0.0056,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 27,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.01,
+      "completed_sequences": 2,
+      "total_plays": 46,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 88,
+      "duration_s": 0.0188,
+      "completed_sequences": 4,
+      "total_plays": 78,
+      "total_discards": 87,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        2
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0103,
+      "completed_sequences": 4,
+      "total_plays": 58,
+      "total_discards": 39,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0165,
+      "completed_sequences": 6,
+      "total_plays": 86,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 26,
+      "duration_s": 0.0061,
+      "completed_sequences": 1,
+      "total_plays": 40,
+      "total_discards": 25,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.0226,
+      "completed_sequences": 6,
+      "total_plays": 92,
+      "total_discards": 81,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0131,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.009,
+      "completed_sequences": 1,
+      "total_plays": 38,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.018,
+      "completed_sequences": 6,
+      "total_plays": 91,
+      "total_discards": 75,
+      "hand_refills": 3,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0123,
+      "completed_sequences": 3,
+      "total_plays": 67,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.012,
+      "completed_sequences": 6,
+      "total_plays": 81,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.012,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0101,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0101,
+      "completed_sequences": 2,
+      "total_plays": 56,
+      "total_discards": 49,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0109,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0146,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0141,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0109,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 45,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0129,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0109,
+      "completed_sequences": 3,
+      "total_plays": 68,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 42,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0125,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0102,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0114,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0104,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 49,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0101,
+      "completed_sequences": 2,
+      "total_plays": 40,
+      "total_discards": 37,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0075,
+      "completed_sequences": 3,
+      "total_plays": 46,
+      "total_discards": 49,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.013,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0108,
+      "completed_sequences": 4,
+      "total_plays": 52,
+      "total_discards": 49,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0079,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 45,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0149,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 77,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        6
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.011,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.01,
+      "completed_sequences": 0,
+      "total_plays": 29,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        7
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0149,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 77,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.006,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 31,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0143,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 65,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 92,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 91,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        2
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0137,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 77,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 32,
+      "duration_s": 0.0055,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 31,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0117,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0111,
+      "completed_sequences": 4,
+      "total_plays": 74,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0095,
+      "completed_sequences": 5,
+      "total_plays": 84,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0091,
+      "completed_sequences": 2,
+      "total_plays": 43,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.0124,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 71,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 84,
+      "duration_s": 0.0163,
+      "completed_sequences": 6,
+      "total_plays": 86,
+      "total_discards": 83,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.009,
+      "completed_sequences": 0,
+      "total_plays": 33,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        10,
+        6
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.009,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.011,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0091,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 51,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0128,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.008,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 86,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 71,
+      "total_discards": 85,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        1
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0131,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 16,
+      "duration_s": 0.004,
+      "completed_sequences": 1,
+      "total_plays": 39,
+      "total_discards": 15,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0097,
+      "completed_sequences": 1,
+      "total_plays": 40,
+      "total_discards": 57,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        9
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0105,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 51,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.015,
+      "completed_sequences": 7,
+      "total_plays": 96,
+      "total_discards": 73,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0169,
+      "completed_sequences": 6,
+      "total_plays": 85,
+      "total_discards": 77,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.012,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 47,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0119,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 45,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 98,
+      "duration_s": 0.0217,
+      "completed_sequences": 7,
+      "total_plays": 103,
+      "total_discards": 97,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0174,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.012,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0127,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.014,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.0217,
+      "completed_sequences": 8,
+      "total_plays": 108,
+      "total_discards": 81,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0099,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.0108,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 35,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0114,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 49,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 94,
+      "duration_s": 0.0199,
+      "completed_sequences": 6,
+      "total_plays": 86,
+      "total_discards": 93,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0108,
+      "completed_sequences": 5,
+      "total_plays": 72,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 74,
+      "duration_s": 0.0119,
+      "completed_sequences": 0,
+      "total_plays": 16,
+      "total_discards": 70,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        13
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0206,
+      "completed_sequences": 7,
+      "total_plays": 102,
+      "total_discards": 75,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0161,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 69,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0089,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0135,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 26,
+      "duration_s": 0.006,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 25,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0135,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.01,
+      "completed_sequences": 2,
+      "total_plays": 51,
+      "total_discards": 39,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.011,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 43,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0125,
+      "completed_sequences": 3,
+      "total_plays": 65,
+      "total_discards": 47,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.014,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.0117,
+      "completed_sequences": 1,
+      "total_plays": 29,
+      "total_discards": 71,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        12
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0109,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 16,
+      "duration_s": 0.0031,
+      "completed_sequences": 1,
+      "total_plays": 35,
+      "total_discards": 15,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0166,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0117,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.015,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 73,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0146,
+      "completed_sequences": 6,
+      "total_plays": 87,
+      "total_discards": 61,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0136,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 86,
+      "duration_s": 0.016,
+      "completed_sequences": 7,
+      "total_plays": 105,
+      "total_discards": 85,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 30,
+      "duration_s": 0.0055,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 29,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 51,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0115,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0109,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 45,
+      "hand_refills": 3,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 77,
+      "duration_s": 0.012,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 74,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        8
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.009,
+      "completed_sequences": 2,
+      "total_plays": 51,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0117,
+      "completed_sequences": 1,
+      "total_plays": 24,
+      "total_discards": 75,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        10
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.0152,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 81,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0078,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0141,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.012,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0144,
+      "completed_sequences": 2,
+      "total_plays": 41,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0268,
+      "completed_sequences": 7,
+      "total_plays": 103,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.021,
+      "completed_sequences": 6,
+      "total_plays": 94,
+      "total_discards": 77,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0117,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 45,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 12,
+      "duration_s": 0.0025,
+      "completed_sequences": 1,
+      "total_plays": 28,
+      "total_discards": 11,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0165,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 77,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0123,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 55,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0132,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0094,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 80,
+      "duration_s": 0.017,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 79,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        6
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0141,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0081,
+      "completed_sequences": 3,
+      "total_plays": 48,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 104,
+      "duration_s": 0.0184,
+      "completed_sequences": 4,
+      "total_plays": 56,
+      "total_discards": 97,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        8
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0101,
+      "completed_sequences": 5,
+      "total_plays": 70,
+      "total_discards": 59,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.012,
+      "completed_sequences": 3,
+      "total_plays": 69,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0124,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0084,
+      "completed_sequences": 5,
+      "total_plays": 65,
+      "total_discards": 39,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.0178,
+      "completed_sequences": 6,
+      "total_plays": 89,
+      "total_discards": 81,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0137,
+      "completed_sequences": 5,
+      "total_plays": 78,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 90,
+      "duration_s": 0.0232,
+      "completed_sequences": 9,
+      "total_plays": 121,
+      "total_discards": 89,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        7,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0181,
+      "completed_sequences": 6,
+      "total_plays": 87,
+      "total_discards": 77,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.017,
+      "completed_sequences": 6,
+      "total_plays": 81,
+      "total_discards": 81,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0141,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 69,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0137,
+      "completed_sequences": 5,
+      "total_plays": 78,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0099,
+      "completed_sequences": 4,
+      "total_plays": 53,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0117,
+      "completed_sequences": 6,
+      "total_plays": 88,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.0158,
+      "completed_sequences": 5,
+      "total_plays": 92,
+      "total_discards": 73,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 84,
+      "duration_s": 0.0171,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 83,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0126,
+      "completed_sequences": 3,
+      "total_plays": 61,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0069,
+      "completed_sequences": 2,
+      "total_plays": 57,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 88,
+      "duration_s": 0.0189,
+      "completed_sequences": 4,
+      "total_plays": 56,
+      "total_discards": 87,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        7
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0105,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0122,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.015,
+      "completed_sequences": 8,
+      "total_plays": 110,
+      "total_discards": 75,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 30,
+      "duration_s": 0.005,
+      "completed_sequences": 2,
+      "total_plays": 43,
+      "total_discards": 29,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0125,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 59,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 80,
+      "duration_s": 0.015,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 79,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        7
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.011,
+      "completed_sequences": 5,
+      "total_plays": 78,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0085,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0091,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0096,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0207,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0128,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 69,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.0093,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 43,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0115,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 30,
+      "duration_s": 0.006,
+      "completed_sequences": 2,
+      "total_plays": 42,
+      "total_discards": 29,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 76,
+      "duration_s": 0.0138,
+      "completed_sequences": 0,
+      "total_plays": 10,
+      "total_discards": 74,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        13
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.007,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 39,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0125,
+      "completed_sequences": 6,
+      "total_plays": 93,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0097,
+      "completed_sequences": 2,
+      "total_plays": 39,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0091,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 39,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0107,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 59,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0091,
+      "completed_sequences": 1,
+      "total_plays": 39,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 73,
+      "total_discards": 69,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 87,
+      "duration_s": 0.0161,
+      "completed_sequences": 3,
+      "total_plays": 70,
+      "total_discards": 84,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        2
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 92,
+      "duration_s": 0.0252,
+      "completed_sequences": 8,
+      "total_plays": 115,
+      "total_discards": 91,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0131,
+      "completed_sequences": 7,
+      "total_plays": 108,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0124,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0121,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 49,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0111,
+      "completed_sequences": 5,
+      "total_plays": 65,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0203,
+      "completed_sequences": 3,
+      "total_plays": 66,
+      "total_discards": 74,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        8
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0184,
+      "completed_sequences": 5,
+      "total_plays": 81,
+      "total_discards": 59,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 56,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0127,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 39,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.01,
+      "completed_sequences": 2,
+      "total_plays": 52,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0152,
+      "completed_sequences": 5,
+      "total_plays": 78,
+      "total_discards": 55,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 80,
+      "duration_s": 0.0198,
+      "completed_sequences": 6,
+      "total_plays": 88,
+      "total_discards": 79,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0137,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.013,
+      "completed_sequences": 1,
+      "total_plays": 33,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        11
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 28,
+      "duration_s": 0.006,
+      "completed_sequences": 1,
+      "total_plays": 37,
+      "total_discards": 27,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0173,
+      "completed_sequences": 7,
+      "total_plays": 94,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0141,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0132,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0127,
+      "completed_sequences": 5,
+      "total_plays": 68,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0089,
+      "completed_sequences": 3,
+      "total_plays": 52,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0151,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.014,
+      "completed_sequences": 0,
+      "total_plays": 32,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        10
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0135,
+      "completed_sequences": 3,
+      "total_plays": 64,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 34,
+      "duration_s": 0.007,
+      "completed_sequences": 1,
+      "total_plays": 39,
+      "total_discards": 33,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0151,
+      "completed_sequences": 5,
+      "total_plays": 81,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 30,
+      "duration_s": 0.0079,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 29,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 59,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 34,
+      "duration_s": 0.0065,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 33,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0129,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 47,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.016,
+      "completed_sequences": 7,
+      "total_plays": 96,
+      "total_discards": 73,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0115,
+      "completed_sequences": 2,
+      "total_plays": 54,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.0071,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 35,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 102,
+      "duration_s": 0.0173,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 91,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        11,
+        6
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.01,
+      "completed_sequences": 2,
+      "total_plays": 45,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0105,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 53,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0177,
+      "completed_sequences": 4,
+      "total_plays": 79,
+      "total_discards": 53,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.017,
+      "completed_sequences": 5,
+      "total_plays": 81,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.014,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.009,
+      "completed_sequences": 1,
+      "total_plays": 47,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0163,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.019,
+      "completed_sequences": 0,
+      "total_plays": 16,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        10
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 80,
+      "duration_s": 0.0202,
+      "completed_sequences": 5,
+      "total_plays": 79,
+      "total_discards": 79,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.012,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.0092,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 43,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 74,
+      "duration_s": 0.0151,
+      "completed_sequences": 0,
+      "total_plays": 8,
+      "total_discards": 73,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        12
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.014,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0175,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.0107,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 35,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0162,
+      "completed_sequences": 6,
+      "total_plays": 85,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.009,
+      "completed_sequences": 2,
+      "total_plays": 54,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 57,
+      "total_discards": 35,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.0173,
+      "completed_sequences": 2,
+      "total_plays": 50,
+      "total_discards": 43,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.018,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0132,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.007,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 28,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 27,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0085,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0103,
+      "completed_sequences": 3,
+      "total_plays": 55,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.018,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 81,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.0096,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 43,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 49,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.015,
+      "completed_sequences": 6,
+      "total_plays": 76,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0167,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 75,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0137,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.013,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0155,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 75,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0076,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.007,
+      "completed_sequences": 1,
+      "total_plays": 35,
+      "total_discards": 35,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 43,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0105,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0152,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 57,
+      "total_discards": 39,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0159,
+      "completed_sequences": 5,
+      "total_plays": 80,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 54,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 74,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0096,
+      "completed_sequences": 4,
+      "total_plays": 79,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 71,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0131,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 53,
+      "total_discards": 43,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0117,
+      "completed_sequences": 3,
+      "total_plays": 51,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.02,
+      "completed_sequences": 6,
+      "total_plays": 102,
+      "total_discards": 75,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0155,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 30,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 29,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.013,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 43,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0187,
+      "completed_sequences": 4,
+      "total_plays": 68,
+      "total_discards": 77,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        6
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.008,
+      "completed_sequences": 2,
+      "total_plays": 39,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0178,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0162,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0171,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0149,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0117,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 84,
+      "duration_s": 0.017,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 83,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0131,
+      "completed_sequences": 2,
+      "total_plays": 60,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.0078,
+      "completed_sequences": 2,
+      "total_plays": 54,
+      "total_discards": 37,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0118,
+      "completed_sequences": 5,
+      "total_plays": 67,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0116,
+      "completed_sequences": 1,
+      "total_plays": 43,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.0196,
+      "completed_sequences": 4,
+      "total_plays": 78,
+      "total_discards": 71,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.015,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0158,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.016,
+      "completed_sequences": 3,
+      "total_plays": 65,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0156,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 36,
+      "duration_s": 0.0103,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 35,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0169,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.0139,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0182,
+      "completed_sequences": 2,
+      "total_plays": 55,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        11,
+        4
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0141,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0137,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0141,
+      "completed_sequences": 2,
+      "total_plays": 48,
+      "total_discards": 49,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0128,
+      "completed_sequences": 4,
+      "total_plays": 64,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0137,
+      "completed_sequences": 0,
+      "total_plays": 12,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        12
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 84,
+      "duration_s": 0.0501,
+      "completed_sequences": 7,
+      "total_plays": 103,
+      "total_discards": 83,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0132,
+      "completed_sequences": 2,
+      "total_plays": 58,
+      "total_discards": 41,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.0108,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 43,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0094,
+      "completed_sequences": 2,
+      "total_plays": 52,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0085,
+      "completed_sequences": 3,
+      "total_plays": 46,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.015,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 55,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 44,
+      "total_discards": 43,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.016,
+      "completed_sequences": 5,
+      "total_plays": 82,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 64,
+      "duration_s": 0.0117,
+      "completed_sequences": 0,
+      "total_plays": 22,
+      "total_discards": 63,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        13
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0143,
+      "completed_sequences": 5,
+      "total_plays": 73,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 38,
+      "duration_s": 0.007,
+      "completed_sequences": 4,
+      "total_plays": 61,
+      "total_discards": 37,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 34,
+      "duration_s": 0.007,
+      "completed_sequences": 1,
+      "total_plays": 32,
+      "total_discards": 33,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.011,
+      "completed_sequences": 4,
+      "total_plays": 67,
+      "total_discards": 55,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0097,
+      "completed_sequences": 2,
+      "total_plays": 55,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.013,
+      "completed_sequences": 3,
+      "total_plays": 64,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 30,
+      "duration_s": 0.009,
+      "completed_sequences": 3,
+      "total_plays": 47,
+      "total_discards": 29,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.0137,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 49,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.016,
+      "completed_sequences": 3,
+      "total_plays": 56,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0161,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 69,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 59,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.017,
+      "completed_sequences": 6,
+      "total_plays": 89,
+      "total_discards": 69,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.0161,
+      "completed_sequences": 7,
+      "total_plays": 89,
+      "total_discards": 69,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0125,
+      "completed_sequences": 5,
+      "total_plays": 77,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        10,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 62,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0124,
+      "completed_sequences": 3,
+      "total_plays": 46,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.012,
+      "completed_sequences": 5,
+      "total_plays": 70,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0115,
+      "completed_sequences": 6,
+      "total_plays": 80,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0117,
+      "completed_sequences": 3,
+      "total_plays": 62,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 28,
+      "duration_s": 0.005,
+      "completed_sequences": 1,
+      "total_plays": 36,
+      "total_discards": 27,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.0168,
+      "completed_sequences": 5,
+      "total_plays": 86,
+      "total_discards": 80,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        9,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 88,
+      "duration_s": 0.018,
+      "completed_sequences": 7,
+      "total_plays": 100,
+      "total_discards": 87,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0131,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 28,
+      "duration_s": 0.005,
+      "completed_sequences": 2,
+      "total_plays": 40,
+      "total_discards": 27,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 82,
+      "duration_s": 0.014,
+      "completed_sequences": 5,
+      "total_plays": 67,
+      "total_discards": 81,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0145,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 92,
+      "duration_s": 0.019,
+      "completed_sequences": 7,
+      "total_plays": 104,
+      "total_discards": 91,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 34,
+      "duration_s": 0.007,
+      "completed_sequences": 2,
+      "total_plays": 44,
+      "total_discards": 33,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 20,
+      "duration_s": 0.005,
+      "completed_sequences": 3,
+      "total_plays": 49,
+      "total_discards": 19,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.0135,
+      "completed_sequences": 2,
+      "total_plays": 55,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0186,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 50,
+      "duration_s": 0.013,
+      "completed_sequences": 2,
+      "total_plays": 59,
+      "total_discards": 49,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.0119,
+      "completed_sequences": 4,
+      "total_plays": 69,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 44,
+      "duration_s": 0.0128,
+      "completed_sequences": 4,
+      "total_plays": 70,
+      "total_discards": 43,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.015,
+      "completed_sequences": 2,
+      "total_plays": 40,
+      "total_discards": 59,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 42,
+      "duration_s": 0.0115,
+      "completed_sequences": 3,
+      "total_plays": 59,
+      "total_discards": 41,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0162,
+      "completed_sequences": 5,
+      "total_plays": 76,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0142,
+      "completed_sequences": 5,
+      "total_plays": 68,
+      "total_discards": 57,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.012,
+      "completed_sequences": 2,
+      "total_plays": 51,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.016,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 59,
+      "hand_refills": 3,
+      "stockpile_remaining": [
+        11,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 66,
+      "duration_s": 0.0162,
+      "completed_sequences": 4,
+      "total_plays": 66,
+      "total_discards": 65,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 64,
+      "duration_s": 0.014,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 63,
+      "hand_refills": 3,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0103,
+      "completed_sequences": 3,
+      "total_plays": 47,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 18,
+      "duration_s": 0.004,
+      "completed_sequences": 1,
+      "total_plays": 37,
+      "total_discards": 17,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0134,
+      "completed_sequences": 0,
+      "total_plays": 32,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        7
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.0197,
+      "completed_sequences": 5,
+      "total_plays": 83,
+      "total_discards": 71,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 26,
+      "duration_s": 0.01,
+      "completed_sequences": 3,
+      "total_plays": 50,
+      "total_discards": 25,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.0097,
+      "completed_sequences": 2,
+      "total_plays": 53,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0126,
+      "completed_sequences": 4,
+      "total_plays": 72,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.014,
+      "completed_sequences": 5,
+      "total_plays": 81,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 78,
+      "duration_s": 0.0193,
+      "completed_sequences": 8,
+      "total_plays": 107,
+      "total_discards": 77,
+      "hand_refills": 3,
+      "stockpile_remaining": [
+        10,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.0121,
+      "completed_sequences": 4,
+      "total_plays": 55,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 58,
+      "duration_s": 0.0147,
+      "completed_sequences": 3,
+      "total_plays": 71,
+      "total_discards": 57,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.012,
+      "completed_sequences": 4,
+      "total_plays": 63,
+      "total_discards": 61,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.009,
+      "completed_sequences": 4,
+      "total_plays": 58,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.0135,
+      "completed_sequences": 5,
+      "total_plays": 71,
+      "total_discards": 59,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.013,
+      "completed_sequences": 4,
+      "total_plays": 76,
+      "total_discards": 71,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.0147,
+      "completed_sequences": 1,
+      "total_plays": 35,
+      "total_discards": 75,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        8
+      ]
+    },
+    {
+      "winner": 0,
+      "turns": 64,
+      "duration_s": 0.0105,
+      "completed_sequences": 0,
+      "total_plays": 25,
+      "total_discards": 63,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        11,
+        11
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.012,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 59,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 76,
+      "duration_s": 0.018,
+      "completed_sequences": 4,
+      "total_plays": 75,
+      "total_discards": 75,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        2
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 72,
+      "duration_s": 0.015,
+      "completed_sequences": 2,
+      "total_plays": 61,
+      "total_discards": 71,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        4
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.0151,
+      "completed_sequences": 5,
+      "total_plays": 74,
+      "total_discards": 67,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 60,
+      "duration_s": 0.014,
+      "completed_sequences": 6,
+      "total_plays": 82,
+      "total_discards": 59,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 56,
+      "duration_s": 0.011,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 55,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 52,
+      "duration_s": 0.0105,
+      "completed_sequences": 3,
+      "total_plays": 58,
+      "total_discards": 51,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 68,
+      "duration_s": 0.012,
+      "completed_sequences": 3,
+      "total_plays": 60,
+      "total_discards": 67,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 40,
+      "duration_s": 0.0104,
+      "completed_sequences": 2,
+      "total_plays": 50,
+      "total_discards": 39,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0123,
+      "completed_sequences": 2,
+      "total_plays": 46,
+      "total_discards": 61,
+      "hand_refills": 1,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 54,
+      "duration_s": 0.011,
+      "completed_sequences": 4,
+      "total_plays": 65,
+      "total_discards": 53,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 62,
+      "duration_s": 0.0118,
+      "completed_sequences": 5,
+      "total_plays": 75,
+      "total_discards": 61,
+      "hand_refills": 2,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 70,
+      "duration_s": 0.013,
+      "completed_sequences": 3,
+      "total_plays": 63,
+      "total_discards": 69,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 46,
+      "duration_s": 0.008,
+      "completed_sequences": 3,
+      "total_plays": 52,
+      "total_discards": 45,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        12,
+        0
+      ]
+    },
+    {
+      "winner": 1,
+      "turns": 48,
+      "duration_s": 0.01,
+      "completed_sequences": 4,
+      "total_plays": 60,
+      "total_discards": 47,
+      "hand_refills": 0,
+      "stockpile_remaining": [
+        13,
+        0
+      ]
+    }
+  ]
+}
