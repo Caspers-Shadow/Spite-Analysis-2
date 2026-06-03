@@ -575,7 +575,10 @@ class GameScreen(QWidget):
         self._ai_thread.started.connect(self._ai_worker.run)
         self._ai_worker.done.connect(self._on_ai_action_computed)
         self._ai_worker.done.connect(self._ai_thread.quit)
+        # Clear Python reference when Qt deletes the C++ object,
+        # so _stop_ai_worker never calls isRunning() on a dead thread.
         self._ai_thread.finished.connect(self._ai_thread.deleteLater)
+        self._ai_thread.finished.connect(self._clear_ai_thread)
         self._ai_thread.start()
 
     def _on_ai_action_computed(self, action):
@@ -601,10 +604,24 @@ class GameScreen(QWidget):
             self._board.set_interactive(True)
             self._board.set_status("Your turn! Play a card or click End Turn.")
 
+    def _clear_ai_thread(self):
+        """Slot called when the AI thread finishes — clears the Python reference."""
+        self._ai_thread = None
+        self._ai_worker = None
+        self._ai_busy = False
+
     def _stop_ai_worker(self):
-        if self._ai_thread and self._ai_thread.isRunning():
-            self._ai_thread.quit(); self._ai_thread.wait(300)
-        self._ai_thread = None; self._ai_worker = None; self._ai_busy = False
+        """Safely stop the AI worker, guarding against already-deleted QThread."""
+        if self._ai_thread is not None:
+            try:
+                if self._ai_thread.isRunning():
+                    self._ai_thread.quit()
+                    self._ai_thread.wait(300)
+            except RuntimeError:
+                pass   # C++ object already deleted by deleteLater — nothing to do
+        self._ai_thread = None
+        self._ai_worker = None
+        self._ai_busy = False
 
     def _handle_game_over(self):
         self._ai_timer.stop()
@@ -857,7 +874,11 @@ class TrainingScreen(QWidget):
         self._train_thread.started.connect(self._train_worker.run)
         self._train_worker.progress.connect(self._on_progress)
         self._train_worker.finished.connect(self._on_finished)
-        # Do NOT call thread.wait() — use deleteLater instead
+        # worker.finished → thread.quit() stops the thread event loop cleanly.
+        # thread.finished → deleteLater schedules C++ cleanup after the loop exits.
+        # Without the quit() connection the thread event loop runs forever and
+        # Qt warns "QThread: Destroyed while thread is still running".
+        self._train_worker.finished.connect(self._train_thread.quit)
         self._train_thread.finished.connect(self._train_thread.deleteLater)
         self._train_thread.start()
 

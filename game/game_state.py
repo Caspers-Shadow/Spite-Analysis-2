@@ -99,6 +99,12 @@ class GameState:
         self.turn_number += 1
         self.phase = self.PHASE_PLAY
         self._draw_for_current_player()
+        # If the new player has NO hand cards AND no play actions (deck exhausted),
+        # detect the stall immediately so run_game never asks an agent to act
+        # when it genuinely cannot — preventing the "returned None" warnings.
+        if not self.current_player.hand and not self.get_play_actions():
+            self._stall_ticks += 1
+            self._maybe_force_winner()
 
     @property
     def current_player(self) -> Player:
