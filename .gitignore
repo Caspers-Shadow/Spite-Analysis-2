@@ -1,0 +1,31 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test/type/lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build/package output
+build/
+dist/
+*.egg-info/
+
+# Local app/runtime output
+checkpoints/
+
+# Editor/OS noise
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
