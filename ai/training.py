@@ -21,6 +21,7 @@ def run_game(
     seed: Optional[int] = None,
     max_turns: int = 3000,
     render_callback: Optional[Callable] = None,
+    stop_callback: Optional[Callable[[], bool]] = None,
 ) -> Dict[str, Any]:
     """
     Run one complete game.  Returns a dict that always includes a
@@ -34,6 +35,9 @@ def run_game(
     t0 = time.time()
 
     for _ in range(max_turns):
+        if stop_callback and stop_callback():
+            break
+
         if state.is_terminal():
             break
 
@@ -55,6 +59,9 @@ def run_game(
 
         if render_callback:
             render_callback(state, action)
+
+        if stop_callback and stop_callback():
+            break
 
         if hasattr(agent, 'record_transition'):
             reward = _shaped_reward(state, pid, prev_stocks)
@@ -113,7 +120,12 @@ class TrainingSession:
             if self._stop_flag:
                 break
             seed = (self.base_seed + ep) if self.base_seed is not None else None
-            result = run_game(self.agent0, self.agent1, seed=seed)
+            result = run_game(
+                self.agent0,
+                self.agent1,
+                seed=seed,
+                stop_callback=lambda: self._stop_flag,
+            )
             self.results.append(result)
             self.episode = ep + 1
             # winner is always 0 or 1, never None
