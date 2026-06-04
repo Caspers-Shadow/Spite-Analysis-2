@@ -271,6 +271,7 @@ class EmbeddedChart(QWidget):
         on_done()     called when chart is fully drawn.
         on_progress(pct) called with 0-100 during computation.
         """
+        self.shutdown_thread()
         self._show_computing()
 
         results = session.results
@@ -292,8 +293,28 @@ class EmbeddedChart(QWidget):
 
         self._chart_worker.done.connect(_on_data)
         self._chart_worker.done.connect(self._chart_thread.quit)
+        self._chart_worker.done.connect(self._chart_worker.deleteLater)
         self._chart_thread.finished.connect(self._chart_thread.deleteLater)
+        self._chart_thread.finished.connect(self._clear_chart_thread)
         self._chart_thread.start()
+
+    def _clear_chart_thread(self):
+        self._chart_thread = None
+        self._chart_worker = None
+
+    def shutdown_thread(self, wait_ms: Optional[int] = None):
+        if self._chart_thread is None:
+            return
+        try:
+            if self._chart_thread.isRunning():
+                self._chart_thread.quit()
+                if wait_ms is None:
+                    self._chart_thread.wait()
+                else:
+                    self._chart_thread.wait(wait_ms)
+            self._clear_chart_thread()
+        except RuntimeError:
+            self._clear_chart_thread()
 
     # ── Drawing (main thread only) ─────────────────────────────────────────────
     def _draw_from_data(self, data: dict):
@@ -468,6 +489,7 @@ class GameScreen(QWidget):
         self._ai_thread: Optional[QThread] = None
         self._ai_worker: Optional[AIActionWorker] = None
         self._ai_busy = False
+        self._active = False
         self._build_ui()
 
     def _build_ui(self):
@@ -505,6 +527,7 @@ class GameScreen(QWidget):
         root.addWidget(self._stats)
 
     def start_human_vs_ai(self, ai_type="Heuristic"):
+        self._active = True
         self.human_idx = 0
         self.agents = [None, _make_agent(ai_type, 1)]
         self._p0_label = "Human"; self._p1_label = ai_type
@@ -513,6 +536,7 @@ class GameScreen(QWidget):
         self._start_new_game()
 
     def start_ai_vs_ai(self, a0="Heuristic", a1="Random", delay=AI_FAST_DELAY_MS):
+        self._active = True
         self.human_idx = -1
         self.agents = [_make_agent(a0,0), _make_agent(a1,1)]
         self._p0_label = a0; self._p1_label = a1
@@ -522,6 +546,8 @@ class GameScreen(QWidget):
         self._start_new_game()
 
     def _start_new_game(self):
+        if not self._active:
+            return
         self._stop_ai_worker(); self._ai_timer.stop(); self._ai_busy = False
         p0n = "Human" if self.human_idx == 0 else self._p0_label
         p1n = "Human" if self.human_idx == 1 else self._p1_label
@@ -559,12 +585,12 @@ class GameScreen(QWidget):
             self._board.set_status("Play a card or click End Turn to discard." + refill)
 
     def _maybe_schedule_ai(self):
-        if not self.state or self.state.game_over or self._ai_busy: return
+        if not self._active or not self.state or self.state.game_over or self._ai_busy: return
         if self.agents[self.state.current_player_idx] is not None:
             self._ai_timer.start(self.ai_delay)
 
     def _start_ai_turn(self):
-        if not self.state or self.state.game_over or self._ai_busy: return
+        if not self._active or not self.state or self.state.game_over or self._ai_busy: return
         pid   = self.state.current_player_idx
         agent = self.agents[pid]
         if agent is None: return
@@ -575,6 +601,7 @@ class GameScreen(QWidget):
         self._ai_thread.started.connect(self._ai_worker.run)
         self._ai_worker.done.connect(self._on_ai_action_computed)
         self._ai_worker.done.connect(self._ai_thread.quit)
+        self._ai_worker.done.connect(self._ai_worker.deleteLater)
         # Clear Python reference when Qt deletes the C++ object,
         # so _stop_ai_worker never calls isRunning() on a dead thread.
         self._ai_thread.finished.connect(self._ai_thread.deleteLater)
@@ -583,7 +610,7 @@ class GameScreen(QWidget):
 
     def _on_ai_action_computed(self, action):
         self._ai_busy = False
-        if not self.state or self.state.game_over: return
+        if not self._active or not self.state or self.state.game_over: return
         if action is None:
             discards = self.state.get_discard_actions()
             action = discards[0] if discards else None
@@ -610,13 +637,16 @@ class GameScreen(QWidget):
         self._ai_worker = None
         self._ai_busy = False
 
-    def _stop_ai_worker(self):
+    def _stop_ai_worker(self, wait_ms: Optional[int] = None):
         """Safely stop the AI worker, guarding against already-deleted QThread."""
         if self._ai_thread is not None:
             try:
                 if self._ai_thread.isRunning():
                     self._ai_thread.quit()
-                    self._ai_thread.wait(300)
+                    if wait_ms is None:
+                        self._ai_thread.wait()
+                    else:
+                        self._ai_thread.wait(wait_ms)
             except RuntimeError:
                 pass   # C++ object already deleted by deleteLater — nothing to do
         self._ai_thread = None
@@ -639,7 +669,7 @@ class GameScreen(QWidget):
             wname = self.state.players[wid].name if wid is not None else "Nobody"
             self._board.set_status(f"Game over – {wname} wins in {self.state.turn_number} turns!")
             self._board.set_interactive(False)
-            QTimer.singleShot(1200, self._start_new_game)
+            QTimer.singleShot(1200, self._restart_if_active)
         else:
             msg = ("🎉 You Win! Stockpile emptied!" if wid == self.human_idx
                    else "😔 AI wins this round. Better luck next time!")
@@ -650,11 +680,24 @@ class GameScreen(QWidget):
             if r == QMessageBox.StandardButton.Yes: self._start_new_game()
 
     def _confirm_menu(self):
-        self._stop_ai_worker(); self._ai_timer.stop()
+        self._ai_timer.stop()
         r = QMessageBox.question(self,"Return to Menu",
             "Return to main menu? Current game will be lost.",
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
-        if r == QMessageBox.StandardButton.Yes: self.return_to_menu.emit()
+        if r == QMessageBox.StandardButton.Yes:
+            self.shutdown_threads()
+            self.return_to_menu.emit()
+        else:
+            self._maybe_schedule_ai()
+
+    def _restart_if_active(self):
+        if self._active:
+            self._start_new_game()
+
+    def shutdown_threads(self):
+        self._active = False
+        self._ai_timer.stop()
+        self._stop_ai_worker()
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -671,6 +714,7 @@ class TrainingScreen(QWidget):
         self._session: Optional[TrainingSession] = None
         self._train_thread: Optional[QThread] = None
         self._train_worker: Optional[TrainingWorker] = None
+        self._suppress_finish_ui = False
         self._a0_label = "Heuristic"
         self._a1_label = "Random"
         self._build_ui()
@@ -686,7 +730,7 @@ class TrainingScreen(QWidget):
         title.setStyleSheet(f"color:{COLOR_UI_ACCENT};")
         title_row.addWidget(title); title_row.addStretch()
         btn_menu = _mkbtn("← Menu", small=True)
-        btn_menu.clicked.connect(self.return_to_menu.emit)
+        btn_menu.clicked.connect(self._return_to_menu)
         title_row.addWidget(btn_menu)
         root.addLayout(title_row)
 
@@ -859,6 +903,8 @@ class TrainingScreen(QWidget):
 
     # ── Training control ───────────────────────────────────────────────────────
     def _start(self):
+        self.shutdown_threads(wait=True)
+        self._suppress_finish_ui = False
         self._a0_label = self._a0.currentText()
         self._a1_label = self._a1.currentText()
         n   = self._ep.value()
@@ -879,7 +925,9 @@ class TrainingScreen(QWidget):
         # Without the quit() connection the thread event loop runs forever and
         # Qt warns "QThread: Destroyed while thread is still running".
         self._train_worker.finished.connect(self._train_thread.quit)
+        self._train_worker.finished.connect(self._train_worker.deleteLater)
         self._train_thread.finished.connect(self._train_thread.deleteLater)
+        self._train_thread.finished.connect(self._clear_train_thread)
         self._train_thread.start()
 
         self._btn_start.setEnabled(False); self._btn_stop.setEnabled(True)
@@ -909,6 +957,11 @@ class TrainingScreen(QWidget):
         self._stat_lbl.setText(f"Avg turns: {s.get('avg_turns','?')}")
 
     def _on_finished(self, s):
+        if self._suppress_finish_ui:
+            self._btn_start.setEnabled(True)
+            self._btn_stop.setEnabled(False)
+            return
+
         self._btn_start.setEnabled(True); self._btn_stop.setEnabled(False)
 
         w = s.get("wins",[0,0]); p = s.get("win_pct",[0,0])
@@ -951,6 +1004,32 @@ class TrainingScreen(QWidget):
             self._session.save_stats(path)
             QMessageBox.information(self,"Saved",f"Saved to:\n{path}")
 
+    def _clear_train_thread(self):
+        self._train_thread = None
+        self._train_worker = None
+
+    def _return_to_menu(self):
+        self.shutdown_threads(wait=True, suppress_finish_ui=True)
+        self.return_to_menu.emit()
+
+    def shutdown_threads(self, wait: bool = True, suppress_finish_ui: bool = True):
+        self._suppress_finish_ui = suppress_finish_ui
+        if self._train_worker is not None:
+            self._train_worker.stop()
+        if self._train_thread is not None:
+            try:
+                if self._train_thread.isRunning():
+                    self._train_thread.quit()
+                    if wait:
+                        self._train_thread.wait()
+            except RuntimeError:
+                pass
+        if wait:
+            self._clear_train_thread()
+        self._chart.shutdown_thread()
+        self._btn_start.setEnabled(True)
+        self._btn_stop.setEnabled(False)
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Main Window
@@ -990,6 +1069,11 @@ class MainWindow(QMainWindow):
         self._training.training_complete.connect(self._stats_v.refresh)
 
         self._stack.setCurrentIndex(0)
+
+    def closeEvent(self, event):
+        self._game.shutdown_threads()
+        self._training.shutdown_threads(wait=True, suppress_finish_ui=True)
+        super().closeEvent(event)
 
     def _launch_hva(self):
         dlg = ModeDialog("Human vs AI", self)
