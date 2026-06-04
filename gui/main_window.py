@@ -489,6 +489,7 @@ class GameScreen(QWidget):
         self._ai_thread: Optional[QThread] = None
         self._ai_worker: Optional[AIActionWorker] = None
         self._ai_busy = False
+        self._schedule_ai_after_thread = False
         self._active = False
         self._build_ui()
 
@@ -549,6 +550,7 @@ class GameScreen(QWidget):
         if not self._active:
             return
         self._stop_ai_worker(); self._ai_timer.stop(); self._ai_busy = False
+        self._schedule_ai_after_thread = False
         p0n = "Human" if self.human_idx == 0 else self._p0_label
         p1n = "Human" if self.human_idx == 1 else self._p1_label
         self.state = GameState(player_names=(p0n, p1n))
@@ -595,21 +597,24 @@ class GameScreen(QWidget):
         agent = self.agents[pid]
         if agent is None: return
         self._ai_busy = True
-        self._ai_worker = AIActionWorker(agent, self.state.copy())
-        self._ai_thread = QThread()
-        self._ai_worker.moveToThread(self._ai_thread)
-        self._ai_thread.started.connect(self._ai_worker.run)
-        self._ai_worker.done.connect(self._on_ai_action_computed)
-        self._ai_worker.done.connect(self._ai_thread.quit)
-        self._ai_worker.done.connect(self._ai_worker.deleteLater)
+        self._schedule_ai_after_thread = False
+        worker = AIActionWorker(agent, self.state.copy())
+        thread = QThread()
+        self._ai_worker = worker
+        self._ai_thread = thread
+        worker.moveToThread(thread)
+        thread.started.connect(worker.run)
+        worker.done.connect(self._on_ai_action_computed)
+        worker.done.connect(thread.quit)
+        worker.done.connect(worker.deleteLater)
         # Clear Python reference when Qt deletes the C++ object,
         # so _stop_ai_worker never calls isRunning() on a dead thread.
-        self._ai_thread.finished.connect(self._ai_thread.deleteLater)
-        self._ai_thread.finished.connect(self._clear_ai_thread)
-        self._ai_thread.start()
+        thread.finished.connect(thread.deleteLater)
+        thread.finished.connect(lambda: self._clear_ai_thread(thread))
+        thread.start()
 
     def _on_ai_action_computed(self, action):
-        self._ai_busy = False
+        self._schedule_ai_after_thread = False
         if not self._active or not self.state or self.state.game_over: return
         if action is None:
             discards = self.state.get_discard_actions()
@@ -626,32 +631,37 @@ class GameScreen(QWidget):
             self._handle_game_over(); return
         new_pid = self.state.current_player_idx
         if self.agents[new_pid] is not None:
-            self._ai_timer.start(self.ai_delay)
+            self._schedule_ai_after_thread = True
         else:
             self._board.set_interactive(True)
             self._board.set_status("Your turn! Play a card or click End Turn.")
 
-    def _clear_ai_thread(self):
+    def _clear_ai_thread(self, thread=None):
         """Slot called when the AI thread finishes — clears the Python reference."""
+        if thread is not None and self._ai_thread is not thread:
+            return
         self._ai_thread = None
         self._ai_worker = None
         self._ai_busy = False
+        if self._schedule_ai_after_thread:
+            self._schedule_ai_after_thread = False
+            self._maybe_schedule_ai()
 
     def _stop_ai_worker(self, wait_ms: Optional[int] = None):
         """Safely stop the AI worker, guarding against already-deleted QThread."""
-        if self._ai_thread is not None:
+        thread = self._ai_thread
+        if thread is not None:
             try:
-                if self._ai_thread.isRunning():
-                    self._ai_thread.quit()
+                if thread.isRunning():
+                    thread.quit()
                     if wait_ms is None:
-                        self._ai_thread.wait()
+                        thread.wait()
                     else:
-                        self._ai_thread.wait(wait_ms)
+                        thread.wait(wait_ms)
             except RuntimeError:
                 pass   # C++ object already deleted by deleteLater — nothing to do
-        self._ai_thread = None
-        self._ai_worker = None
-        self._ai_busy = False
+        if self._ai_thread is thread:
+            self._clear_ai_thread(thread)
 
     def _handle_game_over(self):
         self._ai_timer.stop()
@@ -698,6 +708,10 @@ class GameScreen(QWidget):
         self._active = False
         self._ai_timer.stop()
         self._stop_ai_worker()
+
+    def closeEvent(self, event):
+        self.shutdown_threads()
+        super().closeEvent(event)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1029,6 +1043,10 @@ class TrainingScreen(QWidget):
         self._chart.shutdown_thread()
         self._btn_start.setEnabled(True)
         self._btn_stop.setEnabled(False)
+
+    def closeEvent(self, event):
+        self.shutdown_threads(wait=True, suppress_finish_ui=True)
+        super().closeEvent(event)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
