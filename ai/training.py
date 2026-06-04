@@ -103,6 +103,7 @@ class TrainingSession:
         self.results: List[Dict[str, Any]] = []
         self.wins = [0, 0]
         self.episode = 0
+        self.last_checkpoint_paths: List[str] = []
         self._stop_flag = False
         os.makedirs(checkpoint_dir, exist_ok=True)
 
@@ -204,7 +205,17 @@ class TrainingSession:
         plt.close(fig)
 
     def _save_checkpoints(self):
+        self.last_checkpoint_paths = []
         for i, agent in enumerate([self.agent0, self.agent1]):
             if hasattr(agent, 'save'):
-                path = os.path.join(self.checkpoint_dir, f'agent{i}_ep{self.episode}.pt')
-                agent.save(path)
+                numbered_path = os.path.join(self.checkpoint_dir, f'agent{i}_ep{self.episode}.pt')
+                agent.save(numbered_path)
+                self.last_checkpoint_paths.append(numbered_path)
+
+                try:
+                    from ai.rl_agent import default_model_path
+                    latest_path = default_model_path(i, self.checkpoint_dir)
+                except Exception:
+                    latest_path = os.path.join(self.checkpoint_dir, f'agent{i}_latest.pt')
+                agent.save(latest_path)
+                self.last_checkpoint_paths.append(latest_path)

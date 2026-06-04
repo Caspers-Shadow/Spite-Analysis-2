@@ -885,6 +885,15 @@ class TrainingScreen(QWidget):
         self._btn_start.setEnabled(False); self._btn_stop.setEnabled(True)
         self._prog_lbl.setText("Training in progress…")
 
+        resumed = [
+            label for label, agent in ((self._a0_label, a0), (self._a1_label, a1))
+            if getattr(agent, "loaded_model_path", None)
+        ]
+        if resumed:
+            self._prog_lbl.setText(
+                "Training in progress - resumed " + ", ".join(resumed)
+            )
+
     def _stop(self):
         if self._train_worker: self._train_worker.stop()
         self._btn_stop.setEnabled(False)
