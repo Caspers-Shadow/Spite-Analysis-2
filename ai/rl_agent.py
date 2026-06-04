@@ -14,13 +14,13 @@ Dependencies: PyTorch (optional – agent gracefully degrades to random if absen
 
 import math
 import random
-import json
 import os
 from collections import deque
-from typing import List, Optional, Tuple, Dict, Any
+from typing import List, Optional, Dict, Any, Sequence
 
 from game.game_state import GameState, Action
 from ai.agent import Agent
+from utils.config import DEFAULT_CHECKPOINT_DIR
 
 try:
     import torch
@@ -51,10 +51,16 @@ OBS_DIM = (
     + 1   # phase
 )   # = 30
 
-# Maximum number of discrete actions per step
-# plays: 5 hand × 4 piles + 4 discard × 4 piles + 1 stockpile × 4 piles = 36 plays
-# discards: 5 hand × 4 discard piles = 20
-ACTION_DIM = 56
+# Maximum number of discrete actions per step:
+# plays: 5 hand x 4 piles + 1 stockpile x 4 piles + 4 discard x 4 piles = 40
+# discards: 5 hand x 4 discard piles = 20
+ACTION_DIM = 60
+ACTION_ENCODING_VERSION = 2
+
+
+def default_model_path(player_id: int, checkpoint_dir: str = DEFAULT_CHECKPOINT_DIR) -> str:
+    """Stable per-player DQN checkpoint path used for auto-load/resume."""
+    return os.path.join(checkpoint_dir, f"dqn_agent{player_id}_latest.pt")
 
 
 def encode_observation(state: GameState) -> List[float]:
@@ -96,9 +102,26 @@ def encode_observation(state: GameState) -> List[float]:
     return vec
 
 
-def encode_actions(actions: List[Action]) -> List[int]:
+def _slot_by_identity(cards: Sequence, card) -> Optional[int]:
+    for i, candidate in enumerate(cards):
+        if candidate is card:
+            return i
+    return None
+
+
+def _fallback_hand_slots(actions: List[Action]) -> Dict[int, int]:
+    slots: Dict[int, int] = {}
+    for action in actions:
+        if action.action_type in ("play_hand", "discard") and action.card is not None:
+            key = id(action.card)
+            if key not in slots:
+                slots[key] = len(slots)
+    return slots
+
+
+def encode_actions(actions: List[Action], state: Optional[GameState] = None) -> List[int]:
     """
-    Assign a unique integer ID to each possible action.
+    Assign a stable, non-colliding integer ID to each possible action.
     Returns a list of IDs corresponding to the given action list.
 
     Encoding scheme:
@@ -107,17 +130,28 @@ def encode_actions(actions: List[Action]) -> List[int]:
       play_discard: 24 + src_pile (0-3) * 4 + pile    → 24..39
       discard: 40 + card_slot (0-4) * 4 + discard     → 40..59
     """
+    hand = state.current_player.hand if state is not None else []
+    fallback_slots = _fallback_hand_slots(actions)
+
+    def hand_slot(action: Action) -> int:
+        slot = _slot_by_identity(hand, action.card) if action.card is not None else None
+        if slot is None and action.card is not None:
+            slot = fallback_slots.get(id(action.card), 0)
+        return max(0, min(int(slot or 0), 4))
+
+    def pile(value: Optional[int]) -> int:
+        return max(0, min(int(value or 0), 3))
+
     ids = []
     for a in actions:
         if a.action_type == 'play_hand':
-            ids.append(a.target_pile)       # simplified: just 0-3
+            ids.append(hand_slot(a) * 4 + pile(a.target_pile))
         elif a.action_type == 'play_stockpile':
-            ids.append(20 + a.target_pile)
+            ids.append(20 + pile(a.target_pile))
         elif a.action_type == 'play_discard':
-            src = a.source_pile or 0
-            ids.append(24 + src * 4 + a.target_pile)
+            ids.append(24 + pile(a.source_pile) * 4 + pile(a.target_pile))
         elif a.action_type == 'discard':
-            ids.append(40 + a.target_pile)
+            ids.append(40 + hand_slot(a) * 4 + pile(a.target_pile))
         else:
             ids.append(0)
     return ids
@@ -181,12 +215,17 @@ class RLAgent(Agent):
     EPS_DECAY = 10_000         # steps until EPS_END
 
     def __init__(self, player_id: int, seed: Optional[int] = None,
-                 model_path: Optional[str] = None):
+                 model_path: Optional[str] = None,
+                 checkpoint_dir: str = DEFAULT_CHECKPOINT_DIR,
+                 auto_load: bool = True):
         super().__init__(player_id, name="RLAgent")
         self._rng = random.Random(seed)
         self.epsilon = self.EPS_START
         self.steps = 0
         self.training = True
+        self.model_path = model_path if model_path is not None else default_model_path(player_id, checkpoint_dir)
+        self.loaded_model_path: Optional[str] = None
+        self.load_error: Optional[str] = None
 
         # Metrics
         self.losses: List[float] = []
@@ -208,8 +247,8 @@ class RLAgent(Agent):
         self._last_obs: Optional[List[float]] = None
         self._last_action_id: Optional[int] = 0
 
-        if model_path and os.path.exists(model_path):
-            self.load(model_path)
+        if auto_load and self.model_path and os.path.exists(self.model_path):
+            self.load(self.model_path)
 
     # ── Action selection ───────────────────────────────────────────────────────
     def choose_action(self, state: GameState) -> Optional[Action]:
@@ -230,26 +269,30 @@ class RLAgent(Agent):
         if self._rng.random() < self.epsilon:
             chosen = self._rng.choice(valid_actions)
         else:
-            chosen = self._greedy_action(obs, valid_actions)
+            chosen = self._greedy_action(obs, valid_actions, state)
 
         # Store for training
         if self.training:
-            action_ids = encode_actions(valid_actions)
-            chosen_idx = valid_actions.index(chosen) if chosen in valid_actions else 0
+            action_ids = encode_actions(valid_actions, state)
+            chosen_idx = next(
+                (i for i, action in enumerate(valid_actions) if action is chosen),
+                0,
+            )
             self._last_obs = obs
             self._last_action_id = action_ids[chosen_idx] if chosen_idx < len(action_ids) else 0
 
         return chosen
 
-    def _greedy_action(self, obs: List[float], valid_actions: List[Action]) -> Action:
+    def _greedy_action(self, obs: List[float], valid_actions: List[Action],
+                       state: Optional[GameState] = None) -> Action:
         """Return the action with the highest Q-value among valid actions."""
         with torch.no_grad():
             obs_t = torch.tensor(obs, dtype=torch.float32, device=self.device).unsqueeze(0)
             q_vals = self._net(obs_t).squeeze(0).cpu().numpy()
 
-        action_ids = encode_actions(valid_actions)
+        action_ids = encode_actions(valid_actions, state)
         best_idx = max(range(len(valid_actions)),
-                       key=lambda i: q_vals[action_ids[i] % ACTION_DIM])
+                       key=lambda i: q_vals[action_ids[i]])
         return valid_actions[best_idx]
 
     # ── Training ───────────────────────────────────────────────────────────────
@@ -299,7 +342,10 @@ class RLAgent(Agent):
     def save(self, path: str):
         if not _TORCH_AVAILABLE or self._net is None:
             return
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
         torch.save({
+            'action_dim': ACTION_DIM,
+            'action_encoding_version': ACTION_ENCODING_VERSION,
             'net': self._net.state_dict(),
             'target': self._target_net.state_dict(),
             'optimizer': self._optimizer.state_dict(),
@@ -307,19 +353,41 @@ class RLAgent(Agent):
             'epsilon': self.epsilon,
             'losses': self.losses[-1000:],
             'episode_rewards': self.episode_rewards[-1000:],
+            'current_episode_reward': self._current_episode_reward,
+            'replay': list(self._replay.buffer),
         }, path)
 
-    def load(self, path: str):
+    def load(self, path: str) -> bool:
         if not _TORCH_AVAILABLE or not os.path.exists(path):
-            return
-        ckpt = torch.load(path, map_location=self.device)
+            return False
+        try:
+            ckpt = torch.load(path, map_location=self.device, weights_only=False)
+        except TypeError:
+            ckpt = torch.load(path, map_location=self.device)
+
+        if ckpt.get('action_dim') != ACTION_DIM or \
+                ckpt.get('action_encoding_version') != ACTION_ENCODING_VERSION:
+            self.load_error = (
+                f"Checkpoint {path} uses an incompatible DQN action encoding; "
+                "start a fresh model with the current 60-action encoding."
+            )
+            return False
+
         self._net.load_state_dict(ckpt['net'])
-        self._target_net.load_state_dict(ckpt['target'])
-        self._optimizer.load_state_dict(ckpt['optimizer'])
+        self._target_net.load_state_dict(ckpt.get('target', ckpt['net']))
+        if 'optimizer' in ckpt:
+            self._optimizer.load_state_dict(ckpt['optimizer'])
         self.steps = ckpt.get('steps', 0)
         self.epsilon = ckpt.get('epsilon', self.EPS_END)
         self.losses = ckpt.get('losses', [])
         self.episode_rewards = ckpt.get('episode_rewards', [])
+        self._current_episode_reward = ckpt.get('current_episode_reward', 0.0)
+        if 'replay' in ckpt:
+            self._replay.buffer.clear()
+            self._replay.buffer.extend(ckpt['replay'])
+        self.loaded_model_path = path
+        self.load_error = None
+        return True
 
     # ── Stats ──────────────────────────────────────────────────────────────────
     def get_stats(self) -> Dict[str, Any]:
@@ -332,4 +400,7 @@ class RLAgent(Agent):
             'avg_reward': round(sum(recent_rewards) / len(recent_rewards), 4) if recent_rewards else 0.0,
             'replay_size': len(self._replay) if hasattr(self, '_replay') else 0,
             'torch_available': _TORCH_AVAILABLE,
+            'loaded_model_path': self.loaded_model_path,
+            'model_path': self.model_path,
+            'load_error': self.load_error,
         }
